@@ -88,7 +88,7 @@ export const aboutData: About = {
     {label: 'nationalityLabel', text: 'nationality', Icon: FlagIcon},
     {label: 'interestsLabel', text: 'interests', Icon: SparklesIcon},
     {label: 'studyLabel', text: ' ISTIC Borj Cedria → ESPRIT', Icon: AcademicCapIcon},
-    {label: 'employmentLabel', text: 'Wecraft', Icon: OfficeBuildingIcon},
+    {label: 'employmentLabel', text: 'HexaFlow', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -216,7 +216,7 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const education: TimelineItem[] = [
   {
-    date: '2024 - 2027',
+    date: '2024 - Present',
     location: 'ESPRIT',
     title: 'educationEsprit',
     education: 'educationEspritDetail',
@@ -231,7 +231,36 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'June 2024 - Present',
+    date: 'Febuary 2024 - Present',
+    location: 'HexaFlow',
+    title: 'fullStackDev',
+    experience: 'experienceContent3',
+    content: (
+      <p>
+        Technologies :
+        {[
+          {name: 'React', imgSrc: '/assets/react-logo.png'},
+          {name: 'Next.js', imgSrc: '/assets/next-logo.png'},
+          {name: 'Java', imgSrc: '/assets/java-logo.png'},
+          {name: 'Docker', imgSrc: '/assets/docker-logo.png'},
+        ].map((tech, index, array) => (
+          <span className="inline-flex items-center gap-1" key={index}>
+            &nbsp;{tech.name}
+            <img
+              alt={tech.name}
+              className="my-0 inline-block rounded-md py-0 align-middle"
+              src={tech.imgSrc}
+              style={{margin: 0, padding: 0}}
+              width={20}
+            />
+            {index < array.length - 1 && ' -'}
+          </span>
+        ))}
+      </p>
+    ),
+  },
+  {
+    date: 'June 2024 - January 2025',
     location: 'Wecraft',
     title: 'fullStackDev',
     experience: 'experienceContent1',

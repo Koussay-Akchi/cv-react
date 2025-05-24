@@ -25,6 +25,7 @@ const resources = {
       interestsLabel: 'Interests',
       studyLabel: 'Education',
       wecraft: 'Wecraft',
+      hexaflow: 'HexaFlow',
       spokenLanguages: 'Spoken Languages',
       frontendDevelopment: 'Frontend Development',
       backendDevelopment: 'Backend Development',
@@ -41,8 +42,10 @@ const resources = {
         'Comprehensive program that covers software development, design, algorithms and data structures.',
       experienceContent1:
         'Developing and maintaining a comprehensive CRM for pharmaceutical laboratories 💊. My role includes implementing front-end interfaces, developing back-end functionalities, and designing thorough tests for both.',
-      experienceContent2:
+        experienceContent2:
         "During my internship, I gained hands-on experience in developing and maintaining web applications, contributing to both front-end and back-end tasks. I worked on the CRM for pharmaceutical laboratories, focusing on the architecture's conception and initial implementation, and honing my skills in the technologies mentioned above.",
+        experienceContent3:
+        "Developing dynamic web applications using NodeJS, React and Java. Optimizing system architecture by integrating Dockersolutions. collaborated on agile teams to deliver quality features within tight deadlines.",
       github: 'GitHub',
       linkedin: 'LinkedIn',
       leetcode: 'LeetCode',
@@ -91,6 +94,7 @@ const resources = {
       studyLabel: 'Formation',
       employmentLabel: 'Emploi',
       wecraft: 'Wecraft',
+      hexaflow: 'HexaFlow',
       spokenLanguages: 'Langues',
       frontendDevelopment: 'Développement Frontend',
       backendDevelopment: 'Développement Backend',
@@ -126,6 +130,8 @@ const resources = {
       pfe: "Stage de fin d'études",
       experienceContent2:
         "Pendant mon stage, j'ai acquis une expérience pratique dans le développement et la maintenance d'applications Web, en contribuant à la fois aux tâches front-end et back-end. J'ai travaillé sur le CRM des laboratoires pharmaceutiques, en me concentrant sur la conception de l'architecture et la mise en œuvre initiale, et en perfectionnant mes compétences dans les technologies mentionnées ci-dessus.",
+      experienceContent3:
+        "Développer des applications web dynamiques en utilisant NodeJS et Java. Optimiser l'architecture des systémes en intégrant des solutions Docker. J'ai collaboré dans des équipes agiles pour livrer des fonctionnalités de qualité dans des délais serrés.",
       hero: 'Accueil',
       about: 'À propos',
       portfolio: 'Portfolio',
@@ -133,7 +139,8 @@ const resources = {
       skills: 'Compétences',
       stats: 'Statistiques',
       testimonials: 'Témoignages',
-      'June 2024 - Present': 'Juin 2024 - Present',
+      'June 2024 - January 2025': 'Juin 2024 - Janvier 2025',
+      'Febuary 2024 - Present': 'Fevrier 2024 - Present',
       'January 2024 - June 2024': 'Janvier 2024 - Juin 2024',
       test1:
         "Koussay est un membre d'équipe exceptionnel avec un œil attentif aux détails. Ses contributions lors de nos hackathons ont été déterminantes pour notre succès. Ses compétences techniques sont de haut niveau, et il sait résoudre les problèmes de manière innovante.",
