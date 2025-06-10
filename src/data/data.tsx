@@ -19,6 +19,7 @@ import cars from './../../public/assets/cars.jpg';
 import FTL from './../../public/assets/FTL.png';
 import minesweeper from './../../public/assets/minesweeper.png';
 import soundgrid from './../../public/assets/soundgrid.png';
+import tirfly from './../../public/assets/tirfly.png';
 import {
   About,
   ContactSection,
@@ -205,6 +206,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'soundgridDescription',
     url: 'https://soundgrid.web.app/',
     image: soundgrid,
+  },
+  {
+    title: 'TirFly',
+    description: 'tirflyDescription',
+    url: 'https://github.com/Koussay-Akchi/tirfly-web',
+    image: tirfly,
   },
   {
     title: 'Basic Minesweeper',

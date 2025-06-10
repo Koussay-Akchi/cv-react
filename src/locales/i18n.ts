@@ -68,10 +68,12 @@ const resources = {
         "I've had Koussay help me with various projects. He is not just skilled but also great at explaining technical details.",
       contactDescription: 'If you have an idea or just want to chat, feel free to to contact me.',
       getInTouch: 'Get in touch.',
-      minesweeperDescription: 'A basic customizable Minesweeper clone built with React and vanilla Javascript.',
+      minesweeperDescription: 'A basic customizable Minesweeper clone built  from scratch with React and vanilla Javascript.',
       soundgridDescription:
         'An interactive sound grid where users can compose simple musical patterns by toggling individual cells in a grid.',
-    },
+      tirflyDescription:
+        "A modern travel agency integrating AI features and quality of life services. Developed as part of a 5-week PIdev 2024-25 Esprit project. The goal was to create a full-stack web application allowing agency employees to perform CRUD operations for the agency's offers, and allowing app customers to book flights, accommodation, packages, and events. The application is developed with Symfony, Bootstrap, and Tailwind CSS, uses AI models, and communicates with several external APIs."
+      },
   },
   fr: {
     translation: {
@@ -151,23 +153,21 @@ const resources = {
       contactDescription: "Si vous avez une idée ou souhaitez simplement discuter, n'hésitez pas à me contacter.",
       getInTouch: 'Contactez-moi.',
       'Send Email': 'Envoyer Email',
-      minesweeperDescription: 'Un clone de Minesweeper personnalisable construit avec React et Javascript.',
+      minesweeperDescription: 'Un clone de Minesweeper personnalisable construit à partir de zéro avec React et Javascript.',
       soundgridDescription:
         'Une grille sonore interactive où les utilisateurs peuvent composer des motifs musicaux simples en basculant des cellules individuelles dans une grille.',
-    },
+      tirflyDescription:
+        "Agence de voyages moderne intégrant des fonctionnalités d'IA et des services de qualité de vie. Développé dans le cadre d'un projet PIdev 2024-25 Esprit durant 5 semaines. L'objectif était de créer une application web full-stack permettant aux employés de l'agence d'effectuer des opérations CRUD avec les offres proposées par l'agence elle-même, et aux clients de l'application de réserver des offres de voyages, hebergements, packs et evennements. L'application est développée avec Symfony, Bootstrap et Tailwind CSS, utilise des modeles IA et communique avec plusieurs APIs externes.",},
   },
 };
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
   .init({
     resources,
     lng: 'en', // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
-    // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
-    // if you're using a language detector, do not define the lng option
-
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false,
     },
   });
 
