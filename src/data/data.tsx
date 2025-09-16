@@ -17,6 +17,7 @@ import testimonialImage from '../images/testimonial.webp';
 import profilepic2 from '../images/wecraft.png';
 import cars from './../../public/assets/cars.jpg';
 import FTL from './../../public/assets/FTL.png';
+import gridImgViewer from './../../public/assets/gridImgViewer.png';
 import minesweeper from './../../public/assets/minesweeper.png';
 import soundgrid from './../../public/assets/soundgrid.png';
 import tirfly from './../../public/assets/tirfly.png';
@@ -212,6 +213,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'tirflyDescription',
     url: 'https://github.com/Koussay-Akchi/tirfly-web',
     image: tirfly,
+  },
+  {
+    title: 'gridImgViewer',
+    description: 'gridImgViewerDescription',
+    url: 'https://github.com/Koussay-Akchi/gridImgViewer',
+    image: gridImgViewer,
   },
   {
     title: 'Basic Minesweeper',
