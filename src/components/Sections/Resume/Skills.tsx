@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {FC, memo, PropsWithChildren, useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
 
@@ -30,8 +31,8 @@ export const Skill: FC<{skill: SkillType}> = memo(({skill}) => {
     <div className="flex flex-col">
       <span className="mb-2 ml-2 flex gap-1 text-sm font-medium">
         {t(name)}
-        {image && <img alt={name} className="h-5" src={image} />}
-        {image2 && <img alt={name} className="h-5" src={image2} />}
+        {image && <Image alt={name} className="h-5" height={20} sizes="20px" src={image} width={20} />}
+        {image2 && <Image alt={name} className="h-5" height={20} sizes="20px" src={image2} width={20} />}
       </span>
       <div className="h-5 w-full overflow-hidden rounded-full bg-neutral-300">
         <div className="h-full rounded-full bg-orange-400" style={{width: `${percentage}%`}} />

@@ -16,11 +16,11 @@ import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import profilepic2 from '../images/wecraft.png';
 import cars from './../../public/assets/cars.jpg';
-import FTL from './../../public/assets/FTL.png';
-import gridImgViewer from './../../public/assets/gridImgViewer.png';
-import minesweeper from './../../public/assets/minesweeper.png';
-import soundgrid from './../../public/assets/soundgrid.png';
-import tirfly from './../../public/assets/tirfly.png';
+import FTL from './../../public/assets/FTL.jpg';
+import gridImgViewer from './../../public/assets/gridImgViewer.jpg';
+import minesweeper from './../../public/assets/minesweeper.jpg';
+import soundgrid from './../../public/assets/soundgrid.jpg';
+import tirfly from './../../public/assets/tirfly.jpg';
 import {
   About,
   ContactSection,

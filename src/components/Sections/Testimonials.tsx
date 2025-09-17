@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 
@@ -140,7 +141,14 @@ const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
         {image ? (
           <div className="relative h-14 w-14 shrink-0 sm:h-16 sm:w-16">
             <QuoteIcon className="absolute -left-2 -top-2 h-4 w-4 stroke-black text-white" />
-            <img alt="Testimonial" className="h-full w-full rounded-full" src={image} />
+            <Image
+              alt="Testimonial"
+              className="rounded-full"
+              layout="fill"
+              objectFit="cover"
+              sizes="(min-width: 640px) 64px, 56px"
+              src={image}
+            />
           </div>
         ) : (
           <QuoteIcon className="h-5 w-5 shrink-0 text-white sm:h-8 sm:w-8" />

@@ -28,7 +28,8 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: false,
+    formats: ['image/avif', 'image/webp'],
     domains: ['images.unsplash.com', 'source.unsplash.com'],
   },
 };
