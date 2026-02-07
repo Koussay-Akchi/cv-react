@@ -38,7 +38,6 @@ const gatherUrls = (): string[] => {
   return urls;
 };
 
-
 const PreloadImages = React.memo((): null => {
   useEffect(() => {
     const urls = gatherUrls();
