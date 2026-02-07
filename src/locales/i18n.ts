@@ -42,10 +42,10 @@ const resources = {
         'Comprehensive program that covers software development, design, algorithms and data structures.',
       experienceContent1:
         'Developing and maintaining a comprehensive CRM for pharmaceutical laboratories 💊. My role includes implementing front-end interfaces, developing back-end functionalities, and designing thorough tests for both.',
-        experienceContent2:
+      experienceContent2:
         "During my internship, I gained hands-on experience in developing and maintaining web applications, contributing to both front-end and back-end tasks. I worked on the CRM for pharmaceutical laboratories, focusing on the architecture's conception and initial implementation, and honing my skills in the technologies mentioned above.",
-        experienceContent3:
-        "Developing dynamic web applications using NodeJS, React and Java. Optimizing system architecture by integrating Dockersolutions. collaborated on agile teams to deliver quality features within tight deadlines.",
+      experienceContent3:
+        'Developing dynamic web applications using NodeJS, React and Java. Optimizing system architecture by integrating Dockersolutions. collaborated on agile teams to deliver quality features within tight deadlines.',
       github: 'GitHub',
       linkedin: 'LinkedIn',
       leetcode: 'LeetCode',
@@ -68,16 +68,16 @@ const resources = {
         "I've had Koussay help me with various projects. He is not just skilled but also great at explaining technical details.",
       contactDescription: 'If you have an idea or just want to chat, feel free to to contact me.',
       getInTouch: 'Get in touch.',
-      minesweeperDescription: 'A basic customizable Minesweeper clone built  from scratch with React and vanilla Javascript.',
+      minesweeperDescription:
+        'A basic customizable Minesweeper clone built  from scratch with React and vanilla Javascript.',
       soundgridDescription:
         'An interactive sound grid where users can compose simple musical patterns by toggling individual cells in a grid.',
       tirflyDescription:
-        "A modern travel agency integrating AI features and quality of life services. Developed as part of a 5-week PIdev 2024-25 Esprit project. The goal was to create a full-stack web application allowing agency employees to perform CRUD operations for the agency's offers, and allowing app customers to book flights, accommodation, packages, and events. The application is developed with Symfony, Bootstrap, and Tailwind CSS, uses AI models, and communicates with several external APIs."
-      ,
+        "A modern travel agency integrating AI features and quality of life services. Developed as part of a 5-week PIdev 2024-25 Esprit project. The goal was to create a full-stack web application allowing agency employees to perform CRUD operations for the agency's offers, and allowing app customers to book flights, accommodation, packages, and events. The application is developed with Symfony, Bootstrap, and Tailwind CSS, uses AI models, and communicates with several external APIs.",
       gridImgViewer: 'Grid Image Viewer',
       gridImgViewerDescription:
-        'Simple, fast 2x2 image triage tool. Open a folder, view four thumbnails, delete/copy with hotkeys, undo, calculate stats. Built with Python (Tkinter).'
-      },
+        'Simple, fast 2x2 image triage tool. Open a folder, view four thumbnails, delete/copy with hotkeys, undo, calculate stats. Built with Python (Tkinter).',
+    },
   },
   fr: {
     translation: {
@@ -157,26 +157,25 @@ const resources = {
       contactDescription: "Si vous avez une idée ou souhaitez simplement discuter, n'hésitez pas à me contacter.",
       getInTouch: 'Contactez-moi.',
       'Send Email': 'Envoyer Email',
-      minesweeperDescription: 'Un clone de Minesweeper personnalisable construit à partir de zéro avec React et Javascript.',
+      minesweeperDescription:
+        'Un clone de Minesweeper personnalisable construit à partir de zéro avec React et Javascript.',
       soundgridDescription:
         'Une grille sonore interactive où les utilisateurs peuvent composer des motifs musicaux simples en basculant des cellules individuelles dans une grille.',
       tirflyDescription:
         "Agence de voyages moderne intégrant des fonctionnalités d'IA et des services de qualité de vie. Développé dans le cadre d'un projet PIdev 2024-25 Esprit durant 5 semaines. L'objectif était de créer une application web full-stack permettant aux employés de l'agence d'effectuer des opérations CRUD avec les offres proposées par l'agence elle-même, et aux clients de l'application de réserver des offres de voyages, hebergements, packs et evennements. L'application est développée avec Symfony, Bootstrap et Tailwind CSS, utilise des modeles IA et communique avec plusieurs APIs externes.",
-      gridImgViewer: "Grid Image Viewer",
+      gridImgViewer: 'Grid Image Viewer',
       gridImgViewerDescription:
-        "Outil de tri d'images 2x2 simple et rapide. Ouvrez un dossier, affichez quatre vignettes, supprimez/copiez avec des raccourcis, annulez, calculez des statistiques. Développé avec Python (Tkinter)."
+        "Outil de tri d'images 2x2 simple et rapide. Ouvrez un dossier, affichez quatre vignettes, supprimez/copiez avec des raccourcis, annulez, calculez des statistiques. Développé avec Python (Tkinter).",
     },
   },
 };
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: 'en', // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  lng: 'en', // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;
