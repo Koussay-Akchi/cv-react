@@ -205,7 +205,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Sound-Grid',
     description: 'soundgridDescription',
-    url: 'https://soundgrid.web.app/',
+    url: 'https://soundgrid.koussay.tn/',
     image: soundgrid,
   },
   {
@@ -223,7 +223,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Basic Minesweeper',
     description: 'minesweeperDescription',
-    url: 'https://basic-minesweeper.web.app/',
+    url: 'https://minesweeper.koussay.tn/',
     image: minesweeper,
   },
 ];
