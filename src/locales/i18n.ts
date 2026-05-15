@@ -46,6 +46,8 @@ const resources = {
         "During my internship, I gained hands-on experience in developing and maintaining web applications, contributing to both front-end and back-end tasks. I worked on the CRM for pharmaceutical laboratories, focusing on the architecture's conception and initial implementation, and honing my skills in the technologies mentioned above.",
         experienceContent3:
         "Developing dynamic web applications using NodeJS, React and Java. Optimizing system architecture by integrating Dockersolutions. collaborated on agile teams to deliver quality features within tight deadlines.",
+      experienceContentOpkodeLabs:
+        "Developed WattLink, a full-stack multi-tenant EV charging station management platform, built on the OCPP 1.6 protocol. Engineered a real-time monitoring system using Laravel, PostgreSQL, Redis (Pub/Sub), Socket.IO, and Grafana dashboards, enabling operators to remotely manage charging sessions, configure dynamic pricing, and track telemetry data across multi-tenant networks.",
       github: 'GitHub',
       linkedin: 'LinkedIn',
       leetcode: 'LeetCode',
@@ -138,6 +140,8 @@ const resources = {
         "Pendant mon stage, j'ai acquis une expérience pratique dans le développement et la maintenance d'applications Web, en contribuant à la fois aux tâches front-end et back-end. J'ai travaillé sur le CRM des laboratoires pharmaceutiques, en me concentrant sur la conception de l'architecture et la mise en œuvre initiale, et en perfectionnant mes compétences dans les technologies mentionnées ci-dessus.",
       experienceContent3:
         "Développer des applications web dynamiques en utilisant NodeJS et Java. Optimiser l'architecture des systémes en intégrant des solutions Docker. J'ai collaboré dans des équipes agiles pour livrer des fonctionnalités de qualité dans des délais serrés.",
+      experienceContentOpkodeLabs:
+        "Développement de WattLink, une plateforme full-stack multi-tenant de gestion de bornes de recharge pour véhicules électriques (EVSE), basée sur le protocole OCPP 1.6. Conception d’un système de supervision en temps réel utilisant Laravel, PostgreSQL, Redis (Pub/Sub), Socket.IO et des tableaux de bord Grafana, permettant aux opérateurs de gérer à distance les sessions de recharge, de configurer une tarification dynamique et de suivre les données de télémétrie sur des réseaux multi-tenant.",
       hero: 'Accueil',
       about: 'À propos',
       portfolio: 'Portfolio',
@@ -148,6 +152,7 @@ const resources = {
       'June 2024 - January 2025': 'Juin 2024 - Janvier 2025',
       'Febuary 2024 - Present': 'Fevrier 2024 - Present',
       'January 2024 - June 2024': 'Janvier 2024 - Juin 2024',
+      'July 2025 - Present': 'Juillet 2025 - Présent',
       test1:
         "Koussay est un membre d'équipe exceptionnel avec un œil attentif aux détails. Ses contributions lors de nos hackathons ont été déterminantes pour notre succès. Ses compétences techniques sont de haut niveau, et il sait résoudre les problèmes de manière innovante.",
       test2:

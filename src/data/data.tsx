@@ -245,6 +245,17 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'July 2025 - Present',
+    location: 'OpkodeLabs',
+    title: 'fullStackDev',
+    experience: 'experienceContentOpkodeLabs',
+    content: (
+      <p>
+        Technologies : OCPP 1.6 - Laravel - Python - Redis - Docker - Socket.IO - Grafana
+      </p>
+    ),
+  },
+  {
     date: 'Febuary 2024 - Present',
     location: 'HexaFlow',
     title: 'fullStackDev',
