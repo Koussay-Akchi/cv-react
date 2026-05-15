@@ -256,7 +256,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'Febuary 2024 - Present',
+    date: 'Febuary 2025 - December 2025',
     location: 'HexaFlow',
     title: 'fullStackDev',
     experience: 'experienceContent3',

@@ -19,7 +19,7 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
       <p>
         {experience &&
           t(experience)
-            .split('.')
+            .split(/\.(?!\d)/)
             .map((sentence, index) => sentence.trim() && <p key={index}>{sentence}.</p>)}
 
         {content}
