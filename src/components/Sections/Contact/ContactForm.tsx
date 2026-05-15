@@ -93,7 +93,7 @@ const ContactForm: FC = memo(() => {
         rows={6}
       />
 
-      <ReCAPTCHA onChange={handleRecaptchaChange} sitekey="6LdZvkAqAAAAAG1N0m_0DMITRAr3cQupg2iWrNtU" />
+      <ReCAPTCHA onChange={handleRecaptchaChange} sitekey="6Lf-ressAAAAAJogaYkSFnmSf1iFSZQU52plyhxx" />
 
       <button
         aria-label="Submit contact form"
