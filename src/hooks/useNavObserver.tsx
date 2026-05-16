@@ -10,9 +10,10 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
     const headingsArray = Array.from(headings);
     const headerWrapper = document.getElementById(headerID);
 
-    // Create the IntersectionObserver API
     const observer = new IntersectionObserver(
       entries => {
+        const headerY = 0;
+
         entries.forEach(entry => {
           const currentY = entry.boundingClientRect.y;
           const id = entry.target.getAttribute('id');
@@ -23,8 +24,8 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
               currentIndex: headingsArray.findIndex(heading => heading.getAttribute('id') === id),
               isIntersecting: entry.isIntersecting,
               currentRatio: entry.intersectionRatio,
-              aboveToc: currentY < headerWrapper.getBoundingClientRect().y,
-              belowToc: !(currentY < headerWrapper.getBoundingClientRect().y),
+              aboveToc: currentY < headerY,
+              belowToc: !(currentY < headerY),
             };
             if (decision.isIntersecting) {
               // Header at 30% from the top, update to current header

@@ -45,11 +45,11 @@ const Testimonials: FC = memo(() => {
   }, [width]);
 
   useEffect(() => {
-    if (scrollContainer.current) {
-      const newIndex = Math.round(scrollContainer.current.scrollLeft / itemWidth.current);
+    const newIndex = Math.round(scrollValue / itemWidth.current);
+    if (newIndex !== activeIndex) {
       setActiveIndex(newIndex);
     }
-  }, [itemWidth, scrollValue]);
+  }, [scrollValue, activeIndex]);
 
   const setTestimonial = useCallback(
     (index: number) => () => {
