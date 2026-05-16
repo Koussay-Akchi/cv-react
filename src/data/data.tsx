@@ -22,6 +22,38 @@ import gridImgViewer from './../../public/assets/gridImgViewer.jpg';
 import minesweeper from './../../public/assets/minesweeper.jpg';
 import soundgrid from './../../public/assets/soundgrid.jpg';
 import tirfly from './../../public/assets/tirfly.jpg';
+import angularLogo from './../../public/assets/angular-logo.png';
+import arabicLogo from './../../public/assets/arabic.png';
+import cLogo from './../../public/assets/c-logo.png';
+import dartLogo from './../../public/assets/dart-logo.png';
+import dockerLogo from './../../public/assets/docker-logo.png';
+import englishLogo from './../../public/assets/english.png';
+import figmaLogo from './../../public/assets/figma-logo.png';
+import flutterLogo from './../../public/assets/flutter-logo.png';
+import frenchLogo from './../../public/assets/french.png';
+import javaLogo from './../../public/assets/java-logo.png';
+import jsLogo from './../../public/assets/JavaScript-logo.png';
+import mediawikiLogo from './../../public/assets/mediawiki-logo.png';
+import nodeLogo from './../../public/assets/node-logo.png';
+import pythonLogo from './../../public/assets/python-logo.png';
+import reactLogo from './../../public/assets/react-logo.png';
+import typescriptLogo from './../../public/assets/typescript-logo.png';
+import grafanaLogo from './../../public/assets/grafana.png';
+import jwtLogo from './../../public/assets/jwt-logo.png';
+import laravelLogo from './../../public/assets/laravel.png';
+import mongoLogo from './../../public/assets/mongo-logo.png';
+import nextLogo from './../../public/assets/next-logo.png';
+import ocppLogo from './../../public/assets/ocpp.png';
+import postgresLogo from './../../public/assets/postgres-logo.png';
+import quarkusLogo from './../../public/assets/quarkus-logo.png';
+import redisLogo from './../../public/assets/redis.png';
+import socketioLogo from './../../public/assets/socketio.png';
+import ajmiImage from './../../public/assets/ajmi.jpg';
+import bal3awiImage from './../../public/assets/bal3awi.jpg';
+import ymseddiImage from './../../public/assets/ymseddi.jpg';
+
+
+
 import {
   About,
   ContactSection,
@@ -104,17 +136,17 @@ export const skills: SkillGroup[] = [
       {
         name: 'English',
         level: 10,
-        image: '/assets/english.png',
+        image: englishLogo,
       },
       {
         name: 'French',
         level: 8,
-        image: '/assets/french.png',
+        image: frenchLogo,
       },
       {
         name: 'Arabic',
         level: 9,
-        image: '/assets/arabic.png',
+        image: arabicLogo,
       },
     ],
   },
@@ -124,24 +156,24 @@ export const skills: SkillGroup[] = [
       {
         name: 'React',
         level: 8.5,
-        image: '/assets/react-logo.png',
+        image: reactLogo,
       },
       {
         name: 'Angular',
         level: 7,
-        image: '/assets/angular-logo.png',
+        image: angularLogo,
       },
       {
         name: 'TypeScript',
         level: 7,
-        image: '/assets/typescript-logo.png',
-        image2: '/assets/JavaScript-logo.png',
+        image: typescriptLogo,
+        image2: jsLogo,
       },
       {
         name: 'Flutter/Dart',
         level: 6,
-        image: '/assets/flutter-logo.png',
-        image2: '/assets/dart-logo.png',
+        image: flutterLogo,
+        image2: dartLogo,
       },
     ],
   },
@@ -151,22 +183,22 @@ export const skills: SkillGroup[] = [
       {
         name: 'Java',
         level: 9,
-        image: '/assets/java-logo.png',
+        image: javaLogo,
       },
       {
         name: 'Node.js',
         level: 6,
-        image: '/assets/node-logo.png',
+        image: nodeLogo,
       },
       {
         name: 'Python',
         level: 7.5,
-        image: '/assets/python-logo.png',
+        image: pythonLogo,
       },
       {
         name: 'C',
         level: 4,
-        image: '/assets/c-logo.png',
+        image: cLogo,
       },
     ],
   },
@@ -176,17 +208,17 @@ export const skills: SkillGroup[] = [
       {
         name: 'Docker',
         level: 7,
-        image: '/assets/docker-logo.png',
+        image: dockerLogo,
       },
       {
         name: 'MediaWiki',
         level: 9,
-        image: '/assets/mediawiki-logo.png',
+        image: mediawikiLogo,
       },
       {
         name: 'Figma',
         level: 5,
-        image: '/assets/figma-logo.png',
+        image: figmaLogo,
       },
     ],
   },
@@ -256,14 +288,14 @@ export const experience: TimelineItem[] = [
       <p>
         Technologies :
         {[
-          {name: 'OCPP 1.6', imgSrc: '/assets/ocpp.png'},
-          {name: 'Laravel', imgSrc: '/assets/laravel.png'},
-          {name: 'PostgreSQL', imgSrc: '/assets/postgres-logo.png'},
-          {name: 'Python', imgSrc: '/assets/python-logo.png'},
-          {name: 'Redis', imgSrc: '/assets/redis.png'},
-          {name: 'Docker', imgSrc: '/assets/docker-logo.png'},
-          {name: 'Socket.IO', imgSrc: '/assets/socketio.png'},
-          {name: 'Grafana', imgSrc: '/assets/grafana.png'},
+          {name: 'OCPP 1.6', imgSrc: ocppLogo},
+          {name: 'Laravel', imgSrc: laravelLogo},
+          {name: 'PostgreSQL', imgSrc: postgresLogo},
+          {name: 'Python', imgSrc: pythonLogo},
+          {name: 'Redis', imgSrc: redisLogo},
+          {name: 'Docker', imgSrc: dockerLogo},
+          {name: 'Socket.IO', imgSrc: socketioLogo},
+          {name: 'Grafana', imgSrc: grafanaLogo},
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
@@ -290,10 +322,10 @@ export const experience: TimelineItem[] = [
       <p>
         Technologies :
         {[
-          {name: 'React', imgSrc: '/assets/react-logo.png'},
-          {name: 'Next.js', imgSrc: '/assets/next-logo.png'},
-          {name: 'Java', imgSrc: '/assets/java-logo.png'},
-          {name: 'Docker', imgSrc: '/assets/docker-logo.png'},
+          {name: 'React', imgSrc: reactLogo},
+          {name: 'Next.js', imgSrc: nextLogo},
+          {name: 'Java', imgSrc: javaLogo},
+          {name: 'Docker', imgSrc: dockerLogo},
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
@@ -320,12 +352,12 @@ export const experience: TimelineItem[] = [
       <p>
         Technologies :
         {[
-          {name: 'React', imgSrc: '/assets/react-logo.png'},
-          {name: 'Quarkus Java', imgSrc: '/assets/quarkus-logo.png'},
-          {name: 'Docker', imgSrc: '/assets/docker-logo.png'},
-          {name: 'JWT', imgSrc: '/assets/jwt-logo.png'},
-          {name: 'Postgres', imgSrc: '/assets/postgres-logo.png'},
-          {name: 'MongoDB', imgSrc: '/assets/mongo-logo.png'},
+          {name: 'React', imgSrc: reactLogo},
+          {name: 'Quarkus Java', imgSrc: quarkusLogo},
+          {name: 'Docker', imgSrc: dockerLogo},
+          {name: 'JWT', imgSrc: jwtLogo},
+          {name: 'Postgres', imgSrc: postgresLogo},
+          {name: 'MongoDB', imgSrc: mongoLogo},
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
@@ -357,17 +389,17 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Youssef Mseddi',
       text: 'test1',
-      image: '/assets/ymseddi.jpg',
+      image: ymseddiImage,
     },
     {
       name: 'Aziz Ben Sghaeir',
       text: 'test2',
-      image: '/assets/bal3awi.jpg',
+      image: bal3awiImage,
     },
     {
       name: 'Oussama Ajmi',
       text: 'test3',
-      image: '/assets/ajmi.jpg',
+      image: ajmiImage,
     },
   ],
 };

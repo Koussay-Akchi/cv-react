@@ -66,8 +66,8 @@ export interface Stat {
 export interface Skill {
   name: string;
   level: number;
-  image?: string;
-  image2?: string;
+  image?: string | StaticImageData;
+  image2?: string | StaticImageData;
   max?: number;
 }
 
@@ -107,7 +107,7 @@ export interface TestimonialSection {
 }
 
 export interface Testimonial {
-  image?: string;
+  image?: string | StaticImageData;
   name: string;
   text: string;
 }
