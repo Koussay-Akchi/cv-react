@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, {FC} from 'react';
 
 import {useLanguage} from '../contexts/LanguageContext';
@@ -19,10 +20,12 @@ const LanguageToggle: FC<LanguageToggleProps> = React.memo(({navbar = false}) =>
       className="transform items-center gap-2 text-lg font-bold text-white"
       onClick={toggleLanguage}>
       {navbar ? (
-        <img
+        <Image
           alt={language === 'fr' ? 'English' : 'French'}
           className=" h-7 w-7"
+          height={28}
           src={language === 'fr' ? '/assets/english.png' : '/assets/french.png'}
+          width={28}
         />
       ) : (
         <div>
@@ -33,7 +36,7 @@ const LanguageToggle: FC<LanguageToggleProps> = React.memo(({navbar = false}) =>
               </div>
               <div>
                 ( Changer en Français
-                <img alt="French" className="ml-2 inline-block h-5 w-5" src="/assets/french.png" /> )
+                <Image alt="French" className="ml-2 inline-block h-5 w-5" height={20} src="/assets/french.png" width={20} /> )
               </div>
             </div>
           ) : (
@@ -43,7 +46,7 @@ const LanguageToggle: FC<LanguageToggleProps> = React.memo(({navbar = false}) =>
               </div>
               <div>
                 (Switch to English
-                <img alt="English" className="ml-2 inline-block h-5 w-5" src="/assets/english.png" /> )
+                <Image alt="English" className="ml-2 inline-block h-5 w-5" height={20} src="/assets/english.png" width={20} /> )
               </div>
             </div>
           )}

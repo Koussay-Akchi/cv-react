@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {
   AcademicCapIcon,
   CalendarIcon,
@@ -264,9 +265,10 @@ export const experience: TimelineItem[] = [
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
-            <img
+            <Image
               alt={tech.name}
               className="my-0 inline-block rounded-md py-0 align-middle"
+              height={20}
               src={tech.imgSrc}
               style={{margin: 0, padding: 0}}
               width={20}
@@ -293,9 +295,10 @@ export const experience: TimelineItem[] = [
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
-            <img
+            <Image
               alt={tech.name}
               className="my-0 inline-block rounded-md py-0 align-middle"
+              height={20}
               src={tech.imgSrc}
               style={{margin: 0, padding: 0}}
               width={20}
@@ -324,9 +327,10 @@ export const experience: TimelineItem[] = [
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
-            <img
+            <Image
               alt={tech.name}
               className="my-0 inline-block rounded-md py-0 align-middle"
+              height={20}
               src={tech.imgSrc}
               style={{margin: 0, padding: 0}}
               width={20}

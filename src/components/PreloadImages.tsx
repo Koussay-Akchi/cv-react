@@ -27,14 +27,6 @@ const gatherUrls = (): string[] => {
   });
   add(toUrl(testimonial.imageSrc));
   testimonial.testimonials.forEach(t => add(toUrl(t.image as MaybeStaticImage)));
-  [
-    '/assets/discord-logo.jpg',
-    '/assets/quarkus-logo.png',
-    '/assets/jwt-logo.png',
-    '/assets/postgres-logo.png',
-    '/assets/mongo-logo.png',
-    '/assets/next-logo.png',
-  ].forEach(p => add(p));
   return urls;
 };
 

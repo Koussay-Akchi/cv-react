@@ -20,14 +20,11 @@ const nextConfig = {
   pageExtensions: ['tsx', 'mdx', 'ts'],
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
-  svgo: {
-    multipass: true,
-    plugins: ['removeDimensions'],
-  },
-  strictMode: true,
+  reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
   images: {
+    deviceSizes: [640, 750, 828, 1080, 1200, 1400, 1600, 1920, 2048, 3840],
     unoptimized: false,
     formats: ['image/avif', 'image/webp'],
     domains: ['images.unsplash.com', 'source.unsplash.com'],

@@ -52,9 +52,10 @@ const About: FC = memo(() => {
                         return (
                           <span className=" inline-flex items-center gap-1" key={wordIndex}>
                             Discord
-                            <img
+                            <Image
                               alt="Discord"
                               className=" inline-block rounded-md p-0 align-middle"
+                              height={20}
                               key={wordIndex}
                               src="/assets/discord-logo.jpg"
                               style={{margin: 0, marginRight: '5px', padding: 0}}
@@ -66,9 +67,10 @@ const About: FC = memo(() => {
                         return (
                           <span className=" inline-flex items-center gap-1" key={wordIndex}>
                             Javascript
-                            <img
+                            <Image
                               alt="JavaScript"
                               className=" my-0 inline-block rounded-md py-0 align-middle"
+                              height={20}
                               key={wordIndex}
                               src="/assets/JavaScript-logo.png"
                               style={{margin: 0, padding: 0}}
