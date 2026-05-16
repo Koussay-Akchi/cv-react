@@ -71,5 +71,11 @@
   },
   "resolutions": {
     "autoprefixer": "10.4.5"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.5%",
+    "not ie 11"
+  ]
 }
