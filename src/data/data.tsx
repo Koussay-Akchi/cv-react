@@ -16,45 +16,42 @@ import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import profilepic2 from '../images/wecraft.png';
-import cars from './../../public/assets/cars.jpg';
-import FTL from './../../public/assets/FTL.jpg';
-import gridImgViewer from './../../public/assets/gridImgViewer.jpg';
-import minesweeper from './../../public/assets/minesweeper.jpg';
-import soundgrid from './../../public/assets/soundgrid.jpg';
-import tirfly from './../../public/assets/tirfly.jpg';
+import ajmiImage from './../../public/assets/ajmi.jpg';
 import angularLogo from './../../public/assets/angular-logo.png';
 import arabicLogo from './../../public/assets/arabic.png';
+import bal3awiImage from './../../public/assets/bal3awi.jpg';
 import cLogo from './../../public/assets/c-logo.png';
+import cars from './../../public/assets/cars.jpg';
 import dartLogo from './../../public/assets/dart-logo.png';
 import dockerLogo from './../../public/assets/docker-logo.png';
 import englishLogo from './../../public/assets/english.png';
 import figmaLogo from './../../public/assets/figma-logo.png';
 import flutterLogo from './../../public/assets/flutter-logo.png';
 import frenchLogo from './../../public/assets/french.png';
+import FTL from './../../public/assets/FTL.jpg';
+import grafanaLogo from './../../public/assets/grafana.png';
+import gridImgViewer from './../../public/assets/gridImgViewer.jpg';
 import javaLogo from './../../public/assets/java-logo.png';
 import jsLogo from './../../public/assets/JavaScript-logo.png';
-import mediawikiLogo from './../../public/assets/mediawiki-logo.png';
-import nodeLogo from './../../public/assets/node-logo.png';
-import pythonLogo from './../../public/assets/python-logo.png';
-import reactLogo from './../../public/assets/react-logo.png';
-import typescriptLogo from './../../public/assets/typescript-logo.png';
-import kubernetesLogo from './../../public/assets/kubernetes.png';
-import grafanaLogo from './../../public/assets/grafana.png';
 import jwtLogo from './../../public/assets/jwt-logo.png';
+import kubernetesLogo from './../../public/assets/kubernetes.png';
 import laravelLogo from './../../public/assets/laravel.png';
+import mediawikiLogo from './../../public/assets/mediawiki-logo.png';
+import minesweeper from './../../public/assets/minesweeper.jpg';
 import mongoLogo from './../../public/assets/mongo-logo.png';
 import nextLogo from './../../public/assets/next-logo.png';
+import nodeLogo from './../../public/assets/node-logo.png';
 import ocppLogo from './../../public/assets/ocpp.png';
 import postgresLogo from './../../public/assets/postgres-logo.png';
+import pythonLogo from './../../public/assets/python-logo.png';
 import quarkusLogo from './../../public/assets/quarkus-logo.png';
+import reactLogo from './../../public/assets/react-logo.png';
 import redisLogo from './../../public/assets/redis.png';
 import socketioLogo from './../../public/assets/socketio.png';
-import ajmiImage from './../../public/assets/ajmi.jpg';
-import bal3awiImage from './../../public/assets/bal3awi.jpg';
+import soundgrid from './../../public/assets/soundgrid.jpg';
+import tirfly from './../../public/assets/tirfly.jpg';
+import typescriptLogo from './../../public/assets/typescript-logo.png';
 import ymseddiImage from './../../public/assets/ymseddi.jpg';
-
-
-
 import {
   About,
   ContactSection,
@@ -225,7 +222,7 @@ export const skills: SkillGroup[] = [
         name: 'Figma',
         level: 5,
         image: figmaLogo,
-      }
+      },
     ],
   },
 ];

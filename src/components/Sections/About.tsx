@@ -3,9 +3,9 @@ import Image from 'next/image';
 import {FC, memo} from 'react';
 import {useTranslation} from 'react-i18next';
 
-import {aboutData, SectionId} from '../../data/data';
 import discordLogo from '../../../public/assets/discord-logo.jpg';
 import jsLogo from '../../../public/assets/JavaScript-logo.png';
+import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 const discordImageStyle = {margin: 0, padding: 0};
