@@ -6,6 +6,9 @@ import {useTranslation} from 'react-i18next';
 import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
+const discordImageStyle = {margin: 0, marginRight: '5px', padding: 0};
+const javaScriptImageStyle = {margin: 0, padding: 0};
+
 const About: FC = memo(() => {
   const {t} = useTranslation();
   const {profileImageSrc, profileImageSrc2, aboutItems} = aboutData;
@@ -58,7 +61,7 @@ const About: FC = memo(() => {
                               height={20}
                               key={wordIndex}
                               src="/assets/discord-logo.jpg"
-                              style={{margin: 0, marginRight: '5px', padding: 0}}
+                              style={discordImageStyle}
                               width={20}
                             />
                           </span>
@@ -73,7 +76,7 @@ const About: FC = memo(() => {
                               height={20}
                               key={wordIndex}
                               src="/assets/JavaScript-logo.png"
-                              style={{margin: 0, padding: 0}}
+                              style={javaScriptImageStyle}
                               width={20}
                             />
                           </span>

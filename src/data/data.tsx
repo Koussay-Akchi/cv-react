@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {
   AcademicCapIcon,
   CalendarIcon,
@@ -8,6 +7,7 @@ import {
   OfficeBuildingIcon,
   SparklesIcon,
 } from '@heroicons/react/outline';
+import Image from 'next/image';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LeetCodeIcon from '../components/Icon/LeetCodeIcon';
@@ -34,6 +34,8 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+
+const techImageStyle = {margin: 0, padding: 0};
 
 const birthDate = new Date('2003-01-11');
 
@@ -270,7 +272,7 @@ export const experience: TimelineItem[] = [
               className="my-0 inline-block rounded-md py-0 align-middle"
               height={20}
               src={tech.imgSrc}
-              style={{margin: 0, padding: 0}}
+              style={techImageStyle}
               width={20}
             />
             {index < array.length - 1 && ' -'}
@@ -300,7 +302,7 @@ export const experience: TimelineItem[] = [
               className="my-0 inline-block rounded-md py-0 align-middle"
               height={20}
               src={tech.imgSrc}
-              style={{margin: 0, padding: 0}}
+              style={techImageStyle}
               width={20}
             />
             {index < array.length - 1 && ' -'}
@@ -332,7 +334,7 @@ export const experience: TimelineItem[] = [
               className="my-0 inline-block rounded-md py-0 align-middle"
               height={20}
               src={tech.imgSrc}
-              style={{margin: 0, padding: 0}}
+              style={techImageStyle}
               width={20}
             />
             {index < array.length - 1 && ' -'}

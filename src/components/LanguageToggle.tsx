@@ -36,7 +36,14 @@ const LanguageToggle: FC<LanguageToggleProps> = React.memo(({navbar = false}) =>
               </div>
               <div>
                 ( Changer en Français
-                <Image alt="French" className="ml-2 inline-block h-5 w-5" height={20} src="/assets/french.png" width={20} /> )
+                <Image
+                  alt="French"
+                  className="ml-2 inline-block h-5 w-5"
+                  height={20}
+                  src="/assets/french.png"
+                  width={20}
+                />{' '}
+                )
               </div>
             </div>
           ) : (
@@ -46,7 +53,14 @@ const LanguageToggle: FC<LanguageToggleProps> = React.memo(({navbar = false}) =>
               </div>
               <div>
                 (Switch to English
-                <Image alt="English" className="ml-2 inline-block h-5 w-5" height={20} src="/assets/english.png" width={20} /> )
+                <Image
+                  alt="English"
+                  className="ml-2 inline-block h-5 w-5"
+                  height={20}
+                  src="/assets/english.png"
+                  width={20}
+                />{' '}
+                )
               </div>
             </div>
           )}

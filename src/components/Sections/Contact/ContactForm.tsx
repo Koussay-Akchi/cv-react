@@ -1,9 +1,9 @@
-import dynamic from 'next/dynamic';
 import emailjs from 'emailjs-com';
-import {FC, memo, useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import dynamic from 'next/dynamic';
+import React, {FC, memo, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 
-const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), {ssr: false});
+const ReCAPTCHA = memo(dynamic(() => import('react-google-recaptcha'), {ssr: false}));
 
 interface FormData {
   name: string;
