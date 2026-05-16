@@ -251,7 +251,29 @@ export const experience: TimelineItem[] = [
     experience: 'experienceContentOpkodeLabs',
     content: (
       <p>
-        Technologies : OCPP 1.6 - Laravel - Python - Redis - Docker - Socket.IO - Grafana
+        Technologies :
+        {[
+          {name: 'OCPP 1.6', imgSrc: '/assets/ocpp.png'},
+          {name: 'Laravel', imgSrc: '/assets/laravel.png'},
+          {name: 'PostgreSQL', imgSrc: '/assets/postgres-logo.png'},
+          {name: 'Python', imgSrc: '/assets/python-logo.png'},
+          {name: 'Redis', imgSrc: '/assets/redis.png'},
+          {name: 'Docker', imgSrc: '/assets/docker-logo.png'},
+          {name: 'Socket.IO', imgSrc: '/assets/socketio.png'},
+          {name: 'Grafana', imgSrc: '/assets/grafana.png'},
+        ].map((tech, index, array) => (
+          <span className="inline-flex items-center gap-1" key={index}>
+            &nbsp;{tech.name}
+            <img
+              alt={tech.name}
+              className="my-0 inline-block rounded-md py-0 align-middle"
+              src={tech.imgSrc}
+              style={{margin: 0, padding: 0}}
+              width={20}
+            />
+            {index < array.length - 1 && ' -'}
+          </span>
+        ))}
       </p>
     ),
   },
