@@ -1,7 +1,9 @@
+import dynamic from 'next/dynamic';
 import emailjs from 'emailjs-com';
-import {FC, memo, useCallback, useMemo, useState} from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+import {FC, memo, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {useTranslation} from 'react-i18next';
+
+const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), {ssr: false});
 
 interface FormData {
   name: string;
@@ -23,6 +25,26 @@ const ContactForm: FC = memo(() => {
   const [status, setStatus] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
+  const [showRecaptcha, setShowRecaptcha] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowRecaptcha(true);
+          observer.disconnect();
+        }
+      },
+      {rootMargin: '200px'},
+    );
+
+    if (formRef.current) {
+      observer.observe(formRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
@@ -72,7 +94,7 @@ const ContactForm: FC = memo(() => {
 
   const {t} = useTranslation();
   return (
-    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage} ref={formRef}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
@@ -93,7 +115,9 @@ const ContactForm: FC = memo(() => {
         rows={6}
       />
 
-      <ReCAPTCHA onChange={handleRecaptchaChange} sitekey="6Lf-ressAAAAAJogaYkSFnmSf1iFSZQU52plyhxx" />
+      {showRecaptcha && (
+        <ReCAPTCHA onChange={handleRecaptchaChange} sitekey="6Lf-ressAAAAAJogaYkSFnmSf1iFSZQU52plyhxx" />
+      )}
 
       <button
         aria-label="Submit contact form"
