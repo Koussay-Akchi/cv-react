@@ -61,6 +61,7 @@ const resources = {
       aboutMe: 'About me',
       checkOut: 'Check out some of my work',
       fullStackDev: 'Full-Stack Web Developer',
+      fullStackEngineer: 'Full-Stack Engineer',
       pfe: 'End of Studies Internship',
       test1:
         'Koussay is an exceptional team player with a keen eye for detail. Their contributions during our hackathons were instrumental in our success. Their technical skills are top-tier, and they have a knack for innovative problem-solving.',
@@ -133,6 +134,7 @@ const resources = {
       work: 'Experience',
       checkOut: 'Voici quelques exemples de mes projets',
       fullStackDev: 'Développeur Web Full Stack',
+      fullStackEngineer: 'Ingénieur Full Stack',
       experienceContent1:
         "Développer et maintenir un CRM complet pour les laboratoires pharmaceutiques 💊. Mon rôle comprend la mise en œuvre d'interfaces front-end, le développement de fonctionnalités back-end et la conception de tests approfondis pour les deux.",
       pfe: "Stage de fin d'études",

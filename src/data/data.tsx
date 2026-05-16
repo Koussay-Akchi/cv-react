@@ -38,6 +38,7 @@ import nodeLogo from './../../public/assets/node-logo.png';
 import pythonLogo from './../../public/assets/python-logo.png';
 import reactLogo from './../../public/assets/react-logo.png';
 import typescriptLogo from './../../public/assets/typescript-logo.png';
+import kubernetesLogo from './../../public/assets/kubernetes.png';
 import grafanaLogo from './../../public/assets/grafana.png';
 import jwtLogo from './../../public/assets/jwt-logo.png';
 import laravelLogo from './../../public/assets/laravel.png';
@@ -206,8 +207,13 @@ export const skills: SkillGroup[] = [
     name: 'otherTools',
     skills: [
       {
-        name: 'Docker',
+        name: 'Kubernetes',
         level: 7,
+        image: kubernetesLogo,
+      },
+      {
+        name: 'Docker',
+        level: 9,
         image: dockerLogo,
       },
       {
@@ -219,7 +225,7 @@ export const skills: SkillGroup[] = [
         name: 'Figma',
         level: 5,
         image: figmaLogo,
-      },
+      }
     ],
   },
 ];
@@ -290,10 +296,10 @@ export const experience: TimelineItem[] = [
         {[
           {name: 'OCPP 1.6', imgSrc: ocppLogo},
           {name: 'Laravel', imgSrc: laravelLogo},
-          {name: 'PostgreSQL', imgSrc: postgresLogo},
           {name: 'Python', imgSrc: pythonLogo},
           {name: 'Redis', imgSrc: redisLogo},
           {name: 'Docker', imgSrc: dockerLogo},
+          {name: 'PostgreSQL', imgSrc: postgresLogo},
           {name: 'Socket.IO', imgSrc: socketioLogo},
           {name: 'Grafana', imgSrc: grafanaLogo},
         ].map((tech, index, array) => (
@@ -316,13 +322,14 @@ export const experience: TimelineItem[] = [
   {
     date: 'Febuary 2025 - December 2025',
     location: 'HexaFlow',
-    title: 'fullStackDev',
+    title: 'fullStackEngineer',
     experience: 'experienceContent3',
     content: (
       <p>
         Technologies :
         {[
           {name: 'React', imgSrc: reactLogo},
+          {name: 'Kubernetes', imgSrc: kubernetesLogo},
           {name: 'Next.js', imgSrc: nextLogo},
           {name: 'Java', imgSrc: javaLogo},
           {name: 'Docker', imgSrc: dockerLogo},
