@@ -8,6 +8,7 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
     // Get all sections
     const headings = document.querySelectorAll(selectors);
     const headingsArray = Array.from(headings);
+    const indexMap = new Map(headingsArray.map((el, i) => [el.getAttribute('id'), i]));
     const headerWrapper = document.getElementById(headerID);
 
     const observer = new IntersectionObserver(
@@ -17,26 +18,28 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
         entries.forEach(entry => {
           const currentY = entry.boundingClientRect.y;
           const id = entry.target.getAttribute('id');
-          if (headerWrapper) {
-            // Create a decision object
+          const currentIndex = indexMap.get(id);
+
+          if (headerWrapper && currentIndex !== undefined) {
             const decision = {
               id,
-              currentIndex: headingsArray.findIndex(heading => heading.getAttribute('id') === id),
+              currentIndex,
               isIntersecting: entry.isIntersecting,
               currentRatio: entry.intersectionRatio,
               aboveToc: currentY < headerY,
               belowToc: !(currentY < headerY),
             };
+
             if (decision.isIntersecting) {
-              // Header at 30% from the top, update to current header
               handler(decision.id as SectionId);
             } else if (
               !decision.isIntersecting &&
               decision.currentRatio < 1 &&
               decision.currentRatio > 0 &&
-              decision.belowToc
+              decision.belowToc &&
+              currentIndex > 0
             ) {
-              const currentVisible = headingsArray[decision.currentIndex - 1]?.getAttribute('id');
+              const currentVisible = headingsArray[currentIndex - 1]?.getAttribute('id');
               handler(currentVisible as SectionId);
             }
           }

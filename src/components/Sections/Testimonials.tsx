@@ -4,24 +4,20 @@ import Image from 'next/image';
 import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 
-import {isApple, isMobile} from '../../config';
+import {isMobile} from '../../config';
 import {SectionId, testimonial} from '../../data/data';
 import type {Testimonial} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
-import useWindow from '../../hooks/useWindow';
 import QuoteIcon from '../Icon/QuoteIcon';
 import Section from '../Layout/Section';
 
 const Testimonials: FC = memo(() => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [scrollValue, setScrollValue] = useState(0);
   const [parallaxEnabled, setParallaxEnabled] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
   const itemWidth = useRef(0);
   const scrollContainer = useRef<HTMLDivElement>(null);
-
-  const {width} = useWindow();
 
   const {imageSrc, testimonials} = testimonial;
 
@@ -36,24 +32,43 @@ const Testimonials: FC = memo(() => {
 
   useEffect(() => {
     if (isClient) {
-      setParallaxEnabled(!(isMobile && isApple));
+      setParallaxEnabled(!isMobile);
     }
   }, [isClient]);
 
   useEffect(() => {
-    itemWidth.current = scrollContainer.current ? scrollContainer.current.offsetWidth : 0;
-  }, [width]);
+    const element = scrollContainer.current;
+    if (!element) return;
 
-  useEffect(() => {
-    const newIndex = Math.round(scrollValue / itemWidth.current);
-    if (newIndex !== activeIndex) {
-      setActiveIndex(newIndex);
-    }
-  }, [scrollValue, activeIndex]);
+    const resizeObserver = new ResizeObserver(entries => {
+      for (const entry of entries) {
+        if (entry.target === element) {
+          itemWidth.current = element.offsetWidth;
+        }
+      }
+    });
+
+    resizeObserver.observe(element);
+    return () => resizeObserver.disconnect();
+  }, []);
+
+  const handleScroll = useCallback<UIEventHandler<HTMLDivElement>>(
+    event => {
+      const newScrollValue = event.currentTarget.scrollLeft;
+
+      if (itemWidth.current > 0) {
+        const newIndex = Math.round(newScrollValue / itemWidth.current);
+        if (newIndex !== activeIndex) {
+          setActiveIndex(newIndex);
+        }
+      }
+    },
+    [activeIndex],
+  );
 
   const setTestimonial = useCallback(
     (index: number) => () => {
-      if (scrollContainer !== null && scrollContainer.current !== null) {
+      if (scrollContainer.current) {
         scrollContainer.current.scrollLeft = itemWidth.current * index;
       }
     },
@@ -67,10 +82,6 @@ const Testimonials: FC = memo(() => {
       setTestimonial(activeIndex + 1)();
     }
   }, [activeIndex, setTestimonial, testimonials.length]);
-
-  const handleScroll = useCallback<UIEventHandler<HTMLDivElement>>(event => {
-    setScrollValue(event.currentTarget.scrollLeft);
-  }, []);
 
   useInterval(next, 10000);
 
