@@ -38,3 +38,4 @@ yarn-error.log*
 .firebase
 .firebase/*
 public/assets/original size/
+.claude/

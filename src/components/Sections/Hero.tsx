@@ -1,6 +1,7 @@
 import {ChevronDownIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
+import posthog from 'posthog-js';
 import {FC, memo} from 'react';
 import {useTranslation} from 'react-i18next';
 
@@ -51,7 +52,12 @@ const Hero: FC = memo(() => {
                     primary ? 'border-orange-500 ring-orange-500' : 'border-white ring-white',
                   )}
                   href={href || resumeHref}
-                  key={text}>
+                  key={text}
+                  onClick={() =>
+                    posthog.capture(primary ? 'resume_downloaded' : 'contact_cta_clicked', {
+                      language: resumeHref.includes('francais') ? 'fr' : 'en',
+                    })
+                  }>
                   {t(text)}
                   {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
                 </a>

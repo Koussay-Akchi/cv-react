@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import posthog from 'posthog-js';
 import React, {FC} from 'react';
 
 import {useLanguage} from '../contexts/LanguageContext';
@@ -11,7 +12,9 @@ const LanguageToggle: FC<LanguageToggleProps> = React.memo(({navbar = false}) =>
   const {language, setLanguage} = useLanguage();
 
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'fr' : 'en');
+    const next = language === 'en' ? 'fr' : 'en';
+    setLanguage(next);
+    posthog.capture('language_toggled', {from: language, to: next});
   };
 
   return (

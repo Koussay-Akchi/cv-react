@@ -2,6 +2,7 @@ import {ExternalLinkIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+import posthog from 'posthog-js';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 
@@ -60,9 +61,11 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       if (mobile && !showOverlay) {
         event.preventDefault();
         setShowOverlay(!showOverlay);
+      } else {
+        posthog.capture('portfolio_item_clicked', {title, url});
       }
     },
-    [mobile, showOverlay],
+    [mobile, showOverlay, title, url],
   );
 
   return (

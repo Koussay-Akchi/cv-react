@@ -21,6 +21,8 @@ const MyApp = memo(({Component, pageProps}: AppProps): React.JSX.Element => {
       posthog.init(token, {
         api_host: host,
         capture_pageview: false,
+        capture_exceptions: true,
+        defaults: '2026-01-30',
       });
 
       posthog.capture('$pageview');
