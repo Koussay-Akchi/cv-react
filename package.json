@@ -3,15 +3,15 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "build": "cross-env yarn compile && npx next build",
+    "build": "cross-env yarn compile && npx next build --webpack",
     "clean": "rimraf build-tsc .next",
     "compile": "tsc --build --verbose",
-    "dev": "cross-env yarn compile && npx next dev",
+    "dev": "cross-env yarn compile && npx next dev --webpack",
     "lint": "prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "npx next start",
     "sitemap": "npx next-sitemap",
-    "export": "npx next export",
-    "deploy": "yarn build && yarn export && firebase deploy"
+    "export": "echo Static export is automatically generated during next build",
+    "deploy": "yarn build && firebase deploy"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
@@ -22,20 +22,21 @@
     "classnames": "^2.3.1",
     "emailjs-com": "^3.2.0",
     "i18next": "^23.15.1",
-    "next": "^12.1.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "next": "16.1.0",
+    "posthog-js": "^1.373.5",
+    "react": "19",
+    "react-dom": "19",
     "react-google-recaptcha": "^3.1.0",
     "react-i18next": "^15.0.1",
     "ts-pattern": "^4.0.3"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^12.1.0",
+    "@next/eslint-plugin-next": "16.1.0",
     "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/typography": "^0.5.2",
     "@types/node": "^17.0.21",
-    "@types/react": "^17.0.91",
-    "@types/react-dom": "^17.0.26",
+    "@types/react": "19",
+    "@types/react-dom": "19",
     "@types/tailwindcss": "^3.0.9",
     "@types/webpack-env": "^1.16.3",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
@@ -43,7 +44,7 @@
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.1",
     "eslint": "^8.10.0",
-    "eslint-config-next": "^12.1.0",
+    "eslint-config-next": "16.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -74,5 +75,9 @@
     "not dead",
     "> 0.5%",
     "not ie 11"
-  ]
+  ],
+  "resolutions": {
+    "@types/react": "19",
+    "@types/react-dom": "19"
+  }
 }

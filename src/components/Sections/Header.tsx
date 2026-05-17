@@ -130,7 +130,7 @@ const NavItem: FC<{
 }> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
   const {t} = useTranslation();
   return (
-    <Link href={`/#${section}`} passHref>
+    <Link href={`/#${section}`} legacyBehavior passHref>
       <a className={classNames(current ? activeClass : inactiveClass)} key={section} onClick={onClick}>
         {t(section)}
       </a>
