@@ -124,7 +124,7 @@ const ContactForm: FC = memo(() => {
       )}
 
       <button
-        aria-label="Submit contact form"
+        aria-label={t('Send Email')}
         className={`
         w-max rounded-full border-2 px-4 py-2 text-sm font-medium shadow-md outline-none
         ${

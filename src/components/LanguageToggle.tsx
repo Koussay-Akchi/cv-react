@@ -19,7 +19,6 @@ const LanguageToggle: FC<LanguageToggleProps> = React.memo(({navbar = false}) =>
 
   return (
     <button
-      aria-label="Change language"
       className="transform items-center gap-2 text-lg font-bold text-white"
       onClick={toggleLanguage}>
       {navbar ? (
