@@ -47,11 +47,11 @@ const About: FC = memo(() => {
         <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>
           <div className="flex flex-col gap-y-2">
             <h2 className="text-2xl font-bold text-white">{t('aboutMe')}</h2>
-            <p className="prose prose-sm w-4/5 text-gray-300 sm:prose-base">
+            <div className="prose prose-sm w-4/5 text-gray-300 sm:prose-base">
               {t('aboutDescription')
                 .split('\n')
                 .map((line, index) => (
-                  <div key={index}>
+                  <p key={index} className="mb-2 last:mb-0">
                     {line.split(' ').map((word, wordIndex) => {
                       if (word === 'Discord') {
                         return (
@@ -86,9 +86,9 @@ const About: FC = memo(() => {
                       }
                       return <span key={wordIndex}>{word} </span>;
                     })}
-                  </div>
+                  </p>
                 ))}
-            </p>
+            </div>
           </div>
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {aboutItems.map(({label, text, Icon}, idx) => (

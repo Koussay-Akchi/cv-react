@@ -16,14 +16,14 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
           <span className="flex-1 text-sm sm:flex-none">{t(date)}</span>
         </div>
       </div>
-      <p>
+      <div className="flex flex-col gap-y-2">
         {experience &&
           t(experience)
             .split(/\.(?!\d)/)
             .map((sentence, index) => sentence.trim() && <p key={index}>{sentence}.</p>)}
 
         {content}
-      </p>
+      </div>
       {education && <p>{t(education)}</p>}
     </div>
   );

@@ -1,4 +1,3 @@
-import emailjs from 'emailjs-com';
 import dynamic from 'next/dynamic';
 import posthog from 'posthog-js';
 import React, {FC, memo, useCallback, useEffect, useMemo, useRef, useState} from 'react';
@@ -79,6 +78,7 @@ const ContactForm: FC = memo(() => {
       };
 
       try {
+        const emailjs = await import('emailjs-com');
         await emailjs.send('service_ialq19j', 'template_roh2pmr', formDataRecord, '5JcbdFW4WzhmaC_0O');
         setStatus('Message sent successfully!');
         posthog.capture('contact_form_submitted');

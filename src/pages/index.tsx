@@ -1,6 +1,5 @@
 import '../locales/i18n';
 
-import dynamic from 'next/dynamic';
 import {FC, memo} from 'react';
 
 import Page from '../components/Layout/Page';
@@ -10,11 +9,11 @@ import Resume from '../components/Sections/Resume';
 import {homePageMeta} from '../data/data';
 
 // eslint-disable-next-line react-memo/require-memo
-const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
-const Portfolio = dynamic(() => import('../components/Sections/Portfolio'), {ssr: false});
-const Testimonials = dynamic(() => import('../components/Sections/Testimonials'), {ssr: false});
-const Contact = dynamic(() => import('../components/Sections/Contact'), {ssr: false});
-const Footer = dynamic(() => import('../components/Sections/Footer'), {ssr: false});
+import Header from '../components/Sections/Header';
+import Portfolio from '../components/Sections/Portfolio';
+import Testimonials from '../components/Sections/Testimonials';
+import Contact from '../components/Sections/Contact';
+import Footer from '../components/Sections/Footer';
 
 const Home: FC = memo(() => {
   const {title, description} = homePageMeta;
