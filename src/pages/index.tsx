@@ -12,8 +12,10 @@ import {homePageMeta} from '../data/data';
 import Header from '../components/Sections/Header';
 import Portfolio from '../components/Sections/Portfolio';
 import Testimonials from '../components/Sections/Testimonials';
-import Contact from '../components/Sections/Contact';
-import Footer from '../components/Sections/Footer';
+import dynamic from 'next/dynamic';
+
+const Contact = dynamic(() => import('../components/Sections/Contact'), {ssr: false});
+const Footer = dynamic(() => import('../components/Sections/Footer'), {ssr: false});
 
 const Home: FC = memo(() => {
   const {title, description} = homePageMeta;

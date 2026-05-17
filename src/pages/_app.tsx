@@ -16,9 +16,11 @@ const MyApp = memo(({Component, pageProps}: AppProps): React.JSX.Element => {
     const host = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
 
     let cleanupFn: (() => void) | undefined;
+    let timeoutId: NodeJS.Timeout;
 
     if (token) {
-      import('posthog-js').then((module) => {
+      timeoutId = setTimeout(() => {
+        import('posthog-js').then((module) => {
         const posthog = module.default;
         posthog.init(token, {
           api_host: host,
@@ -38,10 +40,12 @@ const MyApp = memo(({Component, pageProps}: AppProps): React.JSX.Element => {
         cleanupFn = () => {
           router.events.off('routeChangeComplete', handleRouteChange);
         };
-      });
+        });
+      }, 3500);
     }
 
     return () => {
+      if (timeoutId) clearTimeout(timeoutId);
       if (cleanupFn) cleanupFn();
     };
   }, [router.events]);
