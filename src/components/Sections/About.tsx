@@ -24,7 +24,7 @@ const About: FC = memo(() => {
                 alt="about-me-image"
                 layout="fill"
                 objectFit="cover"
-                priority
+                loading="lazy"
                 sizes="(min-width: 768px) 128px, 96px"
                 src={profileImageSrc}
               />

@@ -2,11 +2,11 @@ import {ExternalLinkIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import posthog from 'posthog-js';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 
 import {isMobile} from '../../config';
+import {capture} from '../../lib/analytics';
 import {portfolioItems, SectionId} from '../../data/data';
 import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
@@ -27,7 +27,7 @@ const Portfolio: FC = memo(() => {
                   className={classNames(
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image alt={title} layout="responsive" placeholder="blur" src={image} />
+                  <Image alt={title} layout="responsive" loading="lazy" placeholder="blur" src={image} />
                   <ItemOverlay item={item} />
                 </div>
               </div>
@@ -62,7 +62,7 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
         event.preventDefault();
         setShowOverlay(!showOverlay);
       } else {
-        posthog.capture('portfolio_item_clicked', {title, url});
+        capture('portfolio_item_clicked', {title, url});
       }
     },
     [mobile, showOverlay, title, url],

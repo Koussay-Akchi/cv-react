@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, {FC} from 'react';
 
 import {useLanguage} from '../contexts/LanguageContext';
+import {capture} from '../lib/analytics';
 
 interface LanguageToggleProps {
   navbar?: boolean;
@@ -14,9 +15,7 @@ const LanguageToggle: FC<LanguageToggleProps> = React.memo(({navbar = false}) =>
   const toggleLanguage = () => {
     const next = language === 'en' ? 'fr' : 'en';
     setLanguage(next);
-    import('posthog-js').then((module) => {
-      module.default.capture('language_toggled', {from: language, to: next});
-    });
+    capture('language_toggled', {from: language, to: next});
   };
 
   return (

@@ -1,10 +1,9 @@
 import classNames from 'classnames';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import {FC, memo, UIEventHandler, useCallback, useEffect, useRef, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 
-import {isMobile} from '../../config';
 import {SectionId, testimonial} from '../../data/data';
 import type {Testimonial} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
@@ -13,28 +12,10 @@ import Section from '../Layout/Section';
 
 const Testimonials: FC = memo(() => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [parallaxEnabled, setParallaxEnabled] = useState(false);
-  const [isClient, setIsClient] = useState(false);
-
   const itemWidth = useRef(0);
   const scrollContainer = useRef<HTMLDivElement>(null);
 
   const {imageSrc, testimonials} = testimonial;
-
-  const resolveSrc = useMemo(() => {
-    if (!imageSrc) return undefined;
-    return typeof imageSrc === 'string' ? imageSrc : imageSrc.src;
-  }, [imageSrc]);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  useEffect(() => {
-    if (isClient) {
-      setParallaxEnabled(!isMobile);
-    }
-  }, [isClient]);
 
   useEffect(() => {
     const element = scrollContainer.current;
@@ -95,12 +76,23 @@ const Testimonials: FC = memo(() => {
     <Section noPadding sectionId={SectionId.Testimonials}>
       <div
         className={classNames(
-          'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8',
-          parallaxEnabled && 'bg-fixed',
+          'relative flex w-full items-center justify-center overflow-hidden px-4 py-16 md:py-24 lg:px-8',
           {'bg-neutral-700': !imageSrc},
         )}
-        style={imageSrc ? {backgroundImage: `url(${resolveSrc}`} : undefined}>
-        <div className="z-10 w-full max-w-screen-md px-4 lg:px-0">
+        >
+        {imageSrc ? (
+          <Image
+            alt=""
+            aria-hidden
+            className="object-cover object-center"
+            fill
+            loading="lazy"
+            quality={55}
+            sizes="100vw"
+            src={imageSrc}
+          />
+        ) : null}
+        <div className="relative z-10 w-full max-w-screen-md px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/60 p-6 shadow-lg">
             {i18n.language === 'en' && (
               <h2 className="self-center text-base font-semibold text-white">( Translated from french )</h2>

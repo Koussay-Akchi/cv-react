@@ -6,6 +6,7 @@ import {FC, memo} from 'react';
 import {useTranslation} from 'react-i18next';
 
 import {heroData, SectionId} from '../../data/data';
+import {capture} from '../../lib/analytics';
 import LanguageToggle from '../LanguageToggle';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
@@ -53,13 +54,11 @@ const Hero: FC = memo(() => {
                   )}
                   href={href || resumeHref}
                   key={text}
-                  onClick={() => {
-                    import('posthog-js').then((module) => {
-                      module.default.capture(primary ? 'resume_downloaded' : 'contact_cta_clicked', {
-                        language: resumeHref.includes('francais') ? 'fr' : 'en',
-                      });
-                    });
-                  }}>
+                  onClick={() =>
+                    capture(primary ? 'resume_downloaded' : 'contact_cta_clicked', {
+                      language: resumeHref.includes('francais') ? 'fr' : 'en',
+                    })
+                  }>
                   {t(text)}
                   {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
                 </a>

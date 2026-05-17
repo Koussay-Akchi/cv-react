@@ -1,7 +1,8 @@
 import dynamic from 'next/dynamic';
-import posthog from 'posthog-js';
 import React, {FC, memo, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {useTranslation} from 'react-i18next';
+
+import {capture, captureException} from '../../../lib/analytics';
 
 const ReCAPTCHA = memo(dynamic(() => import('react-google-recaptcha'), {ssr: false}));
 
@@ -81,11 +82,11 @@ const ContactForm: FC = memo(() => {
         const emailjs = await import('emailjs-com');
         await emailjs.send('service_ialq19j', 'template_roh2pmr', formDataRecord, '5JcbdFW4WzhmaC_0O');
         setStatus('Message sent successfully!');
-        posthog.capture('contact_form_submitted');
+        capture('contact_form_submitted');
       } catch (error) {
         setStatus('An error occurred.');
-        posthog.capture('contact_form_error');
-        posthog.captureException(error);
+        capture('contact_form_error');
+        captureException(error);
       }
 
       setTimeout(() => setIsSubmitting(false), 30000);
