@@ -20,6 +20,7 @@ const LanguageProvider: FC<LanguageProviderProps> = React.memo(({children}) => {
 
   useEffect(() => {
     i18n.changeLanguage(language);
+    document.documentElement.lang = language;
   }, [language]);
 
   return <LanguageContext.Provider value={{language, setLanguage}}>{children}</LanguageContext.Provider>;
