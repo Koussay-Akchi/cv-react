@@ -20,26 +20,33 @@ const MyApp = memo(({Component, pageProps}: AppProps): React.JSX.Element => {
 
     if (token) {
       timeoutId = setTimeout(() => {
-        import('posthog-js').then((module) => {
-        const posthog = module.default;
-        posthog.init(token, {
-          api_host: host,
-          capture_pageview: false,
-          capture_exceptions: true,
-          defaults: '2026-01-30',
-        });
+        import('posthog-js').then(module => {
+          const posthog = module.default;
+          posthog.init(token, {
+            api_host: host,
+            capture_pageview: false,
+            capture_pageleave: true,
+            capture_exceptions: true,
+            defaults: '2026-01-30',
+          });
 
-        posthog.capture('$pageview');
-
-        const handleRouteChange = () => {
           posthog.capture('$pageview');
-        };
 
-        router.events.on('routeChangeComplete', handleRouteChange);
+          const handleRouteChangeStart = () => {
+            posthog.capture('$pageleave');
+          };
 
-        cleanupFn = () => {
-          router.events.off('routeChangeComplete', handleRouteChange);
-        };
+          const handleRouteChangeComplete = () => {
+            posthog.capture('$pageview');
+          };
+
+          router.events.on('routeChangeStart', handleRouteChangeStart);
+          router.events.on('routeChangeComplete', handleRouteChangeComplete);
+
+          cleanupFn = () => {
+            router.events.off('routeChangeStart', handleRouteChangeStart);
+            router.events.off('routeChangeComplete', handleRouteChangeComplete);
+          };
         });
       }, 3500);
     }

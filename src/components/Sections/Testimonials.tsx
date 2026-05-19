@@ -78,8 +78,7 @@ const Testimonials: FC = memo(() => {
         className={classNames(
           'relative flex w-full items-center justify-center overflow-hidden px-4 py-16 md:py-24 lg:px-8',
           {'bg-neutral-700': !imageSrc},
-        )}
-        >
+        )}>
         {imageSrc ? (
           <Image
             alt=""
