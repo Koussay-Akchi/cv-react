@@ -52,6 +52,8 @@ import soundgrid from './../../public/assets/soundgrid.webp';
 import tirfly from './../../public/assets/tirfly.webp';
 import typescriptLogo from './../../public/assets/typescript-logo.png';
 import ymseddiImage from './../../public/assets/ymseddi.webp';
+import azureLogo from './../../public/assets/azure.png';
+import terraformLogo from './../../public/assets/terraform.png';
 import {
   About,
   ContactSection,
@@ -223,6 +225,16 @@ export const skills: SkillGroup[] = [
         level: 5,
         image: figmaLogo,
       },
+      {
+        name: 'Terraform',
+        level: 6,
+        image: terraformLogo,
+      },
+      {
+        name: 'Azure',
+        level: 5,
+        image: azureLogo,
+      },
     ],
   },
 ];
@@ -330,6 +342,8 @@ export const experience: TimelineItem[] = [
           {name: 'Next.js', imgSrc: nextLogo},
           {name: 'Java', imgSrc: javaLogo},
           {name: 'Docker', imgSrc: dockerLogo},
+          {name: 'Terraform', imgSrc: terraformLogo},
+          {name: 'Azure', imgSrc: azureLogo},
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
