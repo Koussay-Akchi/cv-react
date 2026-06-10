@@ -54,6 +54,7 @@ import typescriptLogo from './../../public/assets/typescript-logo.png';
 import ymseddiImage from './../../public/assets/ymseddi.webp';
 import azureLogo from './../../public/assets/azure.png';
 import terraformLogo from './../../public/assets/terraform.png';
+import shortenImage from './../../public/assets/shorten.webp';
 import {
   About,
   ContactSection,
@@ -269,6 +270,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'gridImgViewerDescription',
     url: 'https://github.com/Koussay-Akchi/gridImgViewer',
     image: gridImgViewer,
+  },
+  {
+    title: 'Shorten',
+    description: 'shortenDescription',
+    url: 'https://short.koussay.tn',
+    image: shortenImage,
   },
   {
     title: 'Basic Minesweeper',

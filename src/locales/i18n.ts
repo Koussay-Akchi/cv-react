@@ -80,6 +80,8 @@ const resources = {
       gridImgViewer: 'Grid Image Viewer',
       gridImgViewerDescription:
         'Simple, fast 2x2 image triage tool. Open a folder, view four thumbnails, delete/copy with hotkeys, undo, calculate stats. Built with Python (Tkinter).',
+      shortenDescription:
+        'A production-ready URL shortener built from scratch with Next.js and MongoDB Atlas. Turns any long URL into a clean slug served under a custom domain, with per-link click analytics and cookie-based session history. Ships through a fully automated CI/CD pipeline: ESLint, build verification, SonarCloud quality gates, and Docker image publishing. All gated sequentially on GitHub Actions.',
     },
   },
   fr: {
@@ -173,6 +175,8 @@ const resources = {
       gridImgViewer: 'Grid Image Viewer',
       gridImgViewerDescription:
         "Outil de tri d'images 2x2 simple et rapide. Ouvrez un dossier, affichez quatre vignettes, supprimez/copiez avec des raccourcis, annulez, calculez des statistiques. Développé avec Python (Tkinter).",
+      shortenDescription:
+        "Un raccourcisseur d'URL prêt pour la production, construit de zéro avec Next.js et MongoDB Atlas. Transforme n'importe quelle URL longue en un slug propre servi sous un domaine personnalisé, avec des analyses de clics par lien et un historique de session basé sur les cookies. Livré via un pipeline CI/CD entièrement automatisé : ESLint, vérification de build, contrôle qualité SonarCloud et publication d'image Docker. Tout enchaîné séquentiellement sur GitHub Actions.",
     },
   },
 };
