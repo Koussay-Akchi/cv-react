@@ -232,7 +232,7 @@ export const skills: Skill[] = [
     categories: ['cloud/devops'],
   },
   {
-    name: 'Linux (RedHat/Debian)',
+    name: 'Linux',
     level: 8,
     image: linuxLogo,
     categories: ['cloud/devops'],
