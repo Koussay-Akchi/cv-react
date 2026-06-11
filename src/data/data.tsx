@@ -62,6 +62,7 @@ import prometheusLogo from './../../public/assets/prometheus.webp';
 import springLogo from './../../public/assets/spring.webp';
 import firebaseLogo from './../../public/assets/firebase.webp';
 import mongoLogo from './../../public/assets/mongodb.webp';
+import phpLogo from './../../public/assets/php.webp';
 import pytorchLogo from './../../public/assets/pytorch.webp';
 import tensorflowLogo from './../../public/assets/tensorflow.webp';
 import huggingfaceLogo from './../../public/assets/huggingface.webp';
@@ -189,6 +190,12 @@ export const skills: Skill[] = [
     categories: ['frontend'],
   },
   {
+    name: 'Laravel',
+    level: 8,
+    image: laravelLogo,
+    categories: ['frontend','backend'],
+  },
+  {
     name: 'TypeScript',
     level: 7,
     image: typescriptLogo,
@@ -292,6 +299,12 @@ export const skills: Skill[] = [
     categories: ['backend'],
   },
   {
+    name: 'Redis',
+    level: 8,
+    image: redisLogo,
+    categories: ['backend'],
+  },
+  {
     name: 'PyTorch',
     level: 7.5,
     image: pytorchLogo,
@@ -320,6 +333,12 @@ export const skills: Skill[] = [
     level: 4,
     image: cLogo,
     categories: ['languages'],
+  },
+  {
+    name: 'PHP',
+    level: 7.5,
+    image: phpLogo,
+    categories: ['languages', 'backend'],
   },
   {
     name: 'Postman',
