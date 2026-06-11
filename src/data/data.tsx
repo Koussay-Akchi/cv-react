@@ -147,6 +147,36 @@ export const aboutData: About = {
 
 export const skills: Skill[] = [
   {
+    name: 'Terraform',
+    level: 6,
+    image: terraformLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Azure',
+    level: 5,
+    image: azureLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Kubernetes',
+    level: 7,
+    image: kubernetesLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Docker',
+    level: 9,
+    image: dockerLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Next.js',
+    level: 8,
+    image: nextLogo,
+    categories: ['frontend', 'backend'],
+  },
+  {
     name: 'React',
     level: 8.5,
     image: reactLogo,
@@ -164,12 +194,6 @@ export const skills: Skill[] = [
     image: typescriptLogo,
     image2: jsLogo,
     categories: ['languages', 'frontend', 'backend'],
-  },
-  {
-    name: 'Flutter',
-    level: 6,
-    image: flutterLogo,
-    categories: ['frontend'],
   },
   {
     name: 'Java',
@@ -190,24 +214,6 @@ export const skills: Skill[] = [
     categories: ['languages', 'backend', 'ai'],
   },
   {
-    name: 'C',
-    level: 4,
-    image: cLogo,
-    categories: ['languages'],
-  },
-  {
-    name: 'Kubernetes',
-    level: 7,
-    image: kubernetesLogo,
-    categories: ['cloud/devops'],
-  },
-  {
-    name: 'Docker',
-    level: 9,
-    image: dockerLogo,
-    categories: ['cloud/devops'],
-  },
-  {
     name: 'MediaWiki',
     level: 9,
     image: mediawikiLogo,
@@ -218,18 +224,6 @@ export const skills: Skill[] = [
     level: 5,
     image: figmaLogo,
     categories: ['other tools'],
-  },
-  {
-    name: 'Terraform',
-    level: 6,
-    image: terraformLogo,
-    categories: ['cloud/devops'],
-  },
-  {
-    name: 'Azure',
-    level: 5,
-    image: azureLogo,
-    categories: ['cloud/devops'],
   },
   {
     name: 'Ansible',
@@ -274,10 +268,10 @@ export const skills: Skill[] = [
     categories: ['backend'],
   },
   {
-    name: 'Next.js',
-    level: 8,
-    image: nextLogo,
-    categories: ['frontend', 'backend'],
+    name: 'Flutter',
+    level: 6,
+    image: flutterLogo,
+    categories: ['frontend'],
   },
   {
     name: 'Firebase',
@@ -320,6 +314,12 @@ export const skills: Skill[] = [
     level: 7.5,
     image: ollamaLogo,
     categories: ['ai'],
+  },
+  {
+    name: 'C',
+    level: 4,
+    image: cLogo,
+    categories: ['languages'],
   },
   {
     name: 'Postman',
