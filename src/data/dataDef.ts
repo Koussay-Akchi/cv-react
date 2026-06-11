@@ -69,11 +69,7 @@ export interface Skill {
   image?: string | StaticImageData;
   image2?: string | StaticImageData;
   max?: number;
-}
-
-export interface SkillGroup {
-  name: string;
-  skills: Skill[];
+  categories: string[];
 }
 
 /**

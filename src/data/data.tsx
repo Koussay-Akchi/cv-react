@@ -18,16 +18,16 @@ import testimonialImage from '../images/testimonial.webp';
 import profilepic2 from '../images/wecraft.webp';
 import ajmiImage from './../../public/assets/ajmi.webp';
 import angularLogo from './../../public/assets/angular-logo.png';
-import arabicLogo from './../../public/assets/arabic.png';
+
 import bal3awiImage from './../../public/assets/bal3awi.webp';
 import cLogo from './../../public/assets/c-logo.png';
 import cars from './../../public/assets/cars.webp';
-import dartLogo from './../../public/assets/dart-logo.png';
+
 import dockerLogo from './../../public/assets/docker-logo.png';
-import englishLogo from './../../public/assets/english.png';
+
 import figmaLogo from './../../public/assets/figma-logo.png';
 import flutterLogo from './../../public/assets/flutter-logo.png';
-import frenchLogo from './../../public/assets/french.png';
+
 import FTL from './../../public/assets/FTL.webp';
 import grafanaLogo from './../../public/assets/grafana.png';
 import gridImgViewer from './../../public/assets/gridImgViewer.webp';
@@ -38,11 +38,11 @@ import kubernetesLogo from './../../public/assets/kubernetes.png';
 import laravelLogo from './../../public/assets/laravel.png';
 import mediawikiLogo from './../../public/assets/mediawiki-logo.png';
 import minesweeper from './../../public/assets/minesweeper.webp';
-import mongoLogo from './../../public/assets/mongo-logo.png';
+import mongodbLogo from './../../public/assets/mongodb.webp';
 import nextLogo from './../../public/assets/next-logo.png';
 import nodeLogo from './../../public/assets/node-logo.png';
 import ocppLogo from './../../public/assets/ocpp.png';
-import postgresLogo from './../../public/assets/postgres-logo.png';
+import postgresLogo from './../../public/assets/postgresql.webp';
 import pythonLogo from './../../public/assets/python-logo.png';
 import quarkusLogo from './../../public/assets/quarkus-logo.png';
 import reactLogo from './../../public/assets/react-logo.png';
@@ -55,6 +55,21 @@ import ymseddiImage from './../../public/assets/ymseddi.webp';
 import azureLogo from './../../public/assets/azure.png';
 import terraformLogo from './../../public/assets/terraform.png';
 import shortenImage from './../../public/assets/shorten.webp';
+import ansibleLogo from './../../public/assets/ansible.webp';
+import linuxLogo from './../../public/assets/linux.webp';
+import openstackLogo from './../../public/assets/openstack.webp';
+import prometheusLogo from './../../public/assets/prometheus.webp';
+import springLogo from './../../public/assets/spring.webp';
+import firebaseLogo from './../../public/assets/firebase.webp';
+import mongoLogo from './../../public/assets/mongodb.webp';
+import pytorchLogo from './../../public/assets/pytorch.webp';
+import tensorflowLogo from './../../public/assets/tensorflow.webp';
+import huggingfaceLogo from './../../public/assets/huggingface.webp';
+import ollamaLogo from './../../public/assets/ollama.webp';
+import postmanLogo from './../../public/assets/postman.webp';
+import vercelLogo from './../../public/assets/vercel.webp';
+import posthogLogo from './../../public/assets/posthog.webp';
+import sonarqubeLogo from './../../public/assets/sonarqube.webp';
 import {
   About,
   ContactSection,
@@ -62,7 +77,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
-  SkillGroup,
+  Skill,
   Social,
   TestimonialSection,
   TimelineItem,
@@ -130,113 +145,205 @@ export const aboutData: About = {
   ],
 };
 
-export const skills: SkillGroup[] = [
+export const skills: Skill[] = [
   {
-    name: 'spokenLanguages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-        image: englishLogo,
-      },
-      {
-        name: 'French',
-        level: 8,
-        image: frenchLogo,
-      },
-      {
-        name: 'Arabic',
-        level: 9,
-        image: arabicLogo,
-      },
-    ],
+    name: 'React',
+    level: 8.5,
+    image: reactLogo,
+    categories: ['frontend'],
   },
   {
-    name: 'frontendDevelopment',
-    skills: [
-      {
-        name: 'React',
-        level: 8.5,
-        image: reactLogo,
-      },
-      {
-        name: 'Angular',
-        level: 7,
-        image: angularLogo,
-      },
-      {
-        name: 'TypeScript',
-        level: 7,
-        image: typescriptLogo,
-        image2: jsLogo,
-      },
-      {
-        name: 'Flutter/Dart',
-        level: 6,
-        image: flutterLogo,
-        image2: dartLogo,
-      },
-    ],
+    name: 'Angular',
+    level: 7,
+    image: angularLogo,
+    categories: ['frontend'],
   },
   {
-    name: 'backendDevelopment',
-    skills: [
-      {
-        name: 'Java',
-        level: 9,
-        image: javaLogo,
-      },
-      {
-        name: 'Node.js',
-        level: 6,
-        image: nodeLogo,
-      },
-      {
-        name: 'Python',
-        level: 7.5,
-        image: pythonLogo,
-      },
-      {
-        name: 'C',
-        level: 4,
-        image: cLogo,
-      },
-    ],
+    name: 'TypeScript',
+    level: 7,
+    image: typescriptLogo,
+    image2: jsLogo,
+    categories: ['languages', 'frontend', 'backend'],
   },
   {
-    name: 'otherTools',
-    skills: [
-      {
-        name: 'Kubernetes',
-        level: 7,
-        image: kubernetesLogo,
-      },
-      {
-        name: 'Docker',
-        level: 9,
-        image: dockerLogo,
-      },
-      {
-        name: 'MediaWiki',
-        level: 9,
-        image: mediawikiLogo,
-      },
-      {
-        name: 'Figma',
-        level: 5,
-        image: figmaLogo,
-      },
-      {
-        name: 'Terraform',
-        level: 6,
-        image: terraformLogo,
-      },
-      {
-        name: 'Azure',
-        level: 5,
-        image: azureLogo,
-      },
-    ],
+    name: 'Flutter',
+    level: 6,
+    image: flutterLogo,
+    categories: ['frontend'],
+  },
+  {
+    name: 'Java',
+    level: 9,
+    image: javaLogo,
+    categories: ['languages', 'backend'],
+  },
+  {
+    name: 'Node.js',
+    level: 6,
+    image: nodeLogo,
+    categories: ['backend'],
+  },
+  {
+    name: 'Python',
+    level: 7.5,
+    image: pythonLogo,
+    categories: ['languages', 'backend', 'ai'],
+  },
+  {
+    name: 'C',
+    level: 4,
+    image: cLogo,
+    categories: ['languages'],
+  },
+  {
+    name: 'Kubernetes',
+    level: 7,
+    image: kubernetesLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Docker',
+    level: 9,
+    image: dockerLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'MediaWiki',
+    level: 9,
+    image: mediawikiLogo,
+    categories: ['other tools'],
+  },
+  {
+    name: 'Figma',
+    level: 5,
+    image: figmaLogo,
+    categories: ['other tools'],
+  },
+  {
+    name: 'Terraform',
+    level: 6,
+    image: terraformLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Azure',
+    level: 5,
+    image: azureLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Ansible',
+    level: 7,
+    image: ansibleLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Linux (RedHat/Debian)',
+    level: 8,
+    image: linuxLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'OpenStack',
+    level: 6,
+    image: openstackLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Grafana',
+    level: 7,
+    image: grafanaLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Prometheus',
+    level: 7,
+    image: prometheusLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Spring',
+    level: 8,
+    image: springLogo,
+    categories: ['backend'],
+  },
+  {
+    name: 'Quarkus',
+    level: 7,
+    image: quarkusLogo,
+    categories: ['backend'],
+  },
+  {
+    name: 'Next.js',
+    level: 8,
+    image: nextLogo,
+    categories: ['frontend', 'backend'],
+  },
+  {
+    name: 'Firebase',
+    level: 7,
+    image: firebaseLogo,
+    categories: ['cloud/devops', 'backend'],
+  },
+  {
+    name: 'MongoDB',
+    level: 7.5,
+    image: mongodbLogo,
+    categories: ['backend'],
+  },
+  {
+    name: 'PostgreSQL',
+    level: 8,
+    image: postgresLogo,
+    categories: ['backend'],
+  },
+  {
+    name: 'PyTorch',
+    level: 7.5,
+    image: pytorchLogo,
+    categories: ['ai'],
+  },
+  {
+    name: 'TensorFlow',
+    level: 7,
+    image: tensorflowLogo,
+    categories: ['ai'],
+  },
+  {
+    name: 'Hugging Face',
+    level: 7.5,
+    image: huggingfaceLogo,
+    categories: ['ai'],
+  },
+  {
+    name: 'Ollama',
+    level: 7.5,
+    image: ollamaLogo,
+    categories: ['ai'],
+  },
+  {
+    name: 'Postman',
+    level: 8,
+    image: postmanLogo,
+    categories: ['other tools'],
+  },
+  {
+    name: 'Vercel',
+    level: 8,
+    image: vercelLogo,
+    categories: ['other tools'],
+  },
+  {
+    name: 'PostHog',
+    level: 7.5,
+    image: posthogLogo,
+    categories: ['other tools'],
+  },
+  {
+    name: 'SonarQube',
+    level: 7.5,
+    image: sonarqubeLogo,
+    categories: ['other tools'],
   },
 ];
 

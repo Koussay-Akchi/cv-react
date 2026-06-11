@@ -19,11 +19,9 @@ const gatherUrls = (): string[] => {
   add(toUrl(aboutData.profileImageSrc));
   add(toUrl(aboutData.profileImageSrc2));
   portfolioItems.forEach(i => add(toUrl(i.image as MaybeStaticImage)));
-  skills.forEach(g => {
-    g.skills.forEach(s => {
-      add(toUrl(s.image as MaybeStaticImage));
-      add(toUrl(s.image2 as MaybeStaticImage));
-    });
+  skills.forEach(s => {
+    add(toUrl(s.image as MaybeStaticImage));
+    add(toUrl(s.image2 as MaybeStaticImage));
   });
   add(toUrl(testimonial.imageSrc));
   testimonial.testimonials.forEach(t => add(toUrl(t.image as MaybeStaticImage)));
