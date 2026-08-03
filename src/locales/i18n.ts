@@ -48,6 +48,9 @@ const resources = {
         'Developing dynamic web applications using NodeJS, React and Java. Optimizing system architecture by integrating Docker and Kubernetes solutions. collaborated on agile teams to deliver quality features within tight deadlines.',
       experienceContentOpkodeLabs:
         'Developed WattLink, a full-stack multi-tenant EV charging station management platform, built on the OCPP 1.6 protocol. Engineered a real-time monitoring system using Laravel, PostgreSQL, Redis (Pub/Sub), Socket.IO, and Grafana dashboards, enabling operators to remotely manage charging sessions, configure dynamic pricing, and track telemetry data across multi-tenant networks.',
+      experienceContentNextStep:
+        'Designed and deployed a unified API & AI Gateway platform on Apache APISIX, consolidating API management and AI service orchestration into a single cloud-native entry point on Kubernetes. Built multi-tenant isolation, JWT/key-auth authentication, Redis-backed rate limiting, and canary traffic splitting. Implemented an AI orchestration layer supporting OpenAI, Claude, Gemini, and DeepSeek with token-based metering, PII masking via custom Lua plugins, and a Kafka → Elasticsearch billing pipeline. Shipped a React + Node.js self-service Portal with RBAC, observability dashboards (Prometheus, Grafana, Jaeger), and conducted chaos engineering with Chaos Mesh to validate control/data plane failure isolation.',
+      nextStepTitle: 'Cloud Engineering Internship',
       github: 'GitHub',
       linkedin: 'LinkedIn',
       leetcode: 'LeetCode',
@@ -155,6 +158,9 @@ const resources = {
         "Développer des applications web dynamiques en utilisant NodeJS et Java. Optimiser l'architecture des systémes en intégrant des solutions Docker et Kubernetes. J'ai collaboré dans des équipes agiles pour livrer des fonctionnalités de qualité dans des délais serrés.",
       experienceContentOpkodeLabs:
         'Développement de WattLink, une plateforme full-stack multi-tenant de gestion de bornes de recharge pour véhicules électriques (EVSE), basée sur le protocole OCPP 1.6. Conception d’un système de supervision en temps réel utilisant Laravel, PostgreSQL, Redis (Pub/Sub), Socket.IO et des tableaux de bord Grafana, permettant aux opérateurs de gérer à distance les sessions de recharge, de configurer une tarification dynamique et de suivre les données de télémétrie sur des réseaux multi-tenant.',
+      experienceContentNextStep:
+        "Conception et déploiement d'une passerelle API & IA unifiée sur Apache APISIX, centralisant la gestion des API et l'orchestration des services IA dans un point d'entrée cloud-native sur Kubernetes. Mise en place de l'isolation multi-tenant, de l'authentification JWT/key-auth, du rate limiting distribué via Redis, et du traffic splitting canary. Implémentation d'une couche d'orchestration IA supportant OpenAI, Claude, Gemini et DeepSeek avec métering basé sur les tokens, masquage PII via des plugins Lua personnalisés, et un pipeline de facturation Kafka → Elasticsearch. Livraison d'un portail self-service React + Node.js avec RBAC, tableaux de bord d'observabilité (Prometheus, Grafana, Jaeger), et conduite de tests de chaos avec Chaos Mesh pour valider l'isolation entre plan de contrôle et plan de données.",
+      nextStepTitle: 'Stage en Ingénierie Cloud',
       hero: 'Accueil',
       about: 'À propos',
       portfolio: 'Portfolio',
@@ -163,6 +169,7 @@ const resources = {
       stats: 'Statistiques',
       testimonials: 'Témoignages',
       'June 2024 - January 2025': 'Juin 2024 - Janvier 2025',
+      'June 2026 - August 2026': 'Juin 2026 - Août 2026',
       'Febuary 2024 - Present': 'Fevrier 2024 - Present',
       'January 2024 - June 2024': 'Janvier 2024 - Juin 2024',
       'July 2025 - Present': 'Juillet 2025 - Présent',

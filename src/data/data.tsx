@@ -71,6 +71,12 @@ import postmanLogo from './../../public/assets/postman.webp';
 import vercelLogo from './../../public/assets/vercel.webp';
 import posthogLogo from './../../public/assets/posthog.webp';
 import sonarqubeLogo from './../../public/assets/sonarqube.webp';
+import apisixLogo from './../../public/assets/apisix.webp';
+import helmLogo from './../../public/assets/helm.webp';
+import jaegerLogo from './../../public/assets/jaeger.webp';
+import opentelemetryLogo from './../../public/assets/opentelemetry.webp';
+import kafkaLogo from './../../public/assets/kafka.webp';
+import luaLogo from './../../public/assets/lua.webp';
 import {
   About,
   ContactSection,
@@ -364,6 +370,42 @@ export const skills: Skill[] = [
     image: sonarqubeLogo,
     categories: ['other tools'],
   },
+  {
+    name: 'Apache APISIX',
+    level: 7.5,
+    image: apisixLogo,
+    categories: ['cloud/devops', 'backend'],
+  },
+  {
+    name: 'Helm',
+    level: 7.5,
+    image: helmLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'Lua',
+    level: 7,
+    image: luaLogo,
+    categories: ['languages', 'backend'],
+  },
+  {
+    name: 'Kafka',
+    level: 7.5,
+    image: kafkaLogo,
+    categories: ['backend', 'cloud/devops'],
+  },
+  {
+    name: 'Jaeger',
+    level: 7,
+    image: jaegerLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'OpenTelemetry',
+    level: 7.5,
+    image: opentelemetryLogo,
+    categories: ['cloud/devops'],
+  },
 ];
 
 export const portfolioItems: PortfolioItem[] = [
@@ -434,6 +476,45 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
+  {
+    date: 'June 2026 - August 2026',
+    location: 'Next Step',
+    title: 'nextStepTitle',
+    experience: 'experienceContentNextStep',
+    content: (
+      <p>
+        Technologies :
+        {[
+          {name: 'Apache APISIX', imgSrc: apisixLogo},
+          {name: 'Helm', imgSrc: helmLogo},
+          {name: 'Kubernetes', imgSrc: kubernetesLogo},
+          {name: 'Lua', imgSrc: luaLogo},
+          {name: 'Kafka', imgSrc: kafkaLogo},
+          {name: 'Prometheus', imgSrc: prometheusLogo},
+          {name: 'Grafana', imgSrc: grafanaLogo},
+          {name: 'Jaeger', imgSrc: jaegerLogo},
+          {name: 'OpenTelemetry', imgSrc: opentelemetryLogo},
+          {name: 'Redis', imgSrc: redisLogo},
+          {name: 'Node.js', imgSrc: nodeLogo},
+          {name: 'React', imgSrc: reactLogo},
+          {name: 'PostgreSQL', imgSrc: postgresLogo},
+        ].map((tech, index, array) => (
+          <span className="inline-flex items-center gap-1" key={index}>
+            &nbsp;{tech.name}
+            <Image
+              alt={tech.name}
+              className="my-0 inline-block rounded-md py-0 align-middle"
+              height={20}
+              src={tech.imgSrc}
+              style={techImageStyle}
+              width={20}
+            />
+            {index < array.length - 1 && ' -'}
+          </span>
+        ))}
+      </p>
+    ),
+  },
   {
     date: 'July 2025 - Present',
     location: 'OpkodeLabs',
