@@ -43,7 +43,7 @@ const resources = {
         'Implemented front-end interfaces for laboratory operations and internal data entry flows.',
         'Built backend services and business rules to support product, customer, and order management.',
         'Added automated testing across the stack to reduce regressions and improve release stability.',
-        'Worked with React, Quarkus, Docker, JWT, PostgreSQL, and MongoDB to deliver a reliable SaaS workflow.',
+        'Engineered robust RESTful endpoints with role-based access control and token lifecycle verification.',
       ],
       experienceContent2:
         'Worked on the CRM for pharmaceutical laboratories during my internship with React, Quarkus, Docker, JWT, PostgreSQL, and MongoDB, contributing across the stack while learning production-grade web app architecture and development workflows.',
@@ -51,15 +51,15 @@ const resources = {
         'Participated in the design and initial implementation of the application architecture.',
         'Contributed to both front-end features and back-end services for core business processes.',
         'Collaborated with the team to improve code quality, maintainability, and deployment practices.',
-        'Used React, Quarkus, Docker, JWT, PostgreSQL, and MongoDB in a real-world SaaS environment.',
+        'Structured data schemas and storage strategies across relational and NoSQL databases for laboratory workflows.',
       ],
       experienceContent3:
         'Developed dynamic web applications with React, Next.js, Node.js, Java, Docker, Terraform, and Azure while improving system architecture with containerized deployments and cloud-ready patterns.',
       experienceContent3Highlights: [
         'Delivered customer-facing features in agile teams with a focus on maintainability and timely releases.',
         'Improved deployment workflows by integrating Docker and cloud infrastructure tooling.',
-        'Helped modernize frontend and backend interactions for smoother user experiences.',
-        'Worked with React, Next.js, Node.js, Java, Docker, Terraform, and Azure to support scalable delivery.',
+        'Enhanced frontend performance, state management, and component modularity for seamless user experiences.',
+        'Integrated automated CI/CD checks and containerized environments to ensure reliable multi-service deployments.',
       ],
       experienceContentOpkodeLabs:
         'Developed WattLink, a multi-tenant EV charging management platform built on the OCPP 1.6 protocol with Laravel, PostgreSQL, Redis, Socket.IO, Docker, and Grafana, delivering real-time visibility into station status, pricing, sessions, and telemetry data.',
@@ -182,7 +182,7 @@ const resources = {
         "Mise en œuvre d'interfaces de laboratoire pour les flux de saisie et les processus internes.",
         "Création de services backend et de règles métier pour la gestion des produits, clients et commandes.",
         "Ajout de tests automatisés sur l'ensemble de la stack pour réduire les régressions et améliorer la stabilité des livraisons.",
-        "Livraison d'un workflow SaaS fiable pour les besoins de recherche, vente et conformité.",
+        "Conception de points d'API REST robustes avec contrôle d'accès basé sur les rôles et vérification du cycle de vie des jetons.",
       ],
       pfe: "Stage de fin d'études",
       experienceContent2:
@@ -191,15 +191,15 @@ const resources = {
         "Participation à la conception et à la mise en œuvre initiale de l'architecture applicative.",
         "Contribution aux fonctionnalités front-end et aux services backend pour les processus métier critiques.",
         "Collaboration avec l'équipe pour améliorer la qualité du code, la maintenabilité et les pratiques de déploiement.",
-        "Utilisation de React, Quarkus, Docker, JWT, PostgreSQL et MongoDB dans un environnement SaaS réel.",
+        "Structuration des schémas de données et stratégies de stockage entre bases relationnelles et NoSQL pour les opérations de laboratoire.",
       ],
       experienceContent3:
         "Développement d'applications web dynamiques avec React, Next.js, Node.js, Java, Docker, Terraform et Azure, tout en améliorant l'architecture système grâce à des déploiements conteneurisés et à des pratiques cloud-ready.",
       experienceContent3Highlights: [
         "Livraison de fonctionnalités orientées client dans des équipes agiles, avec un focus sur la maintenabilité et les livraisons dans les délais.",
         "Amélioration des workflows de déploiement via Docker et des outils d'infrastructure cloud.",
-        "Modernisation des interactions frontend/backend pour des expériences utilisateur plus fluides.",
-        "Travail avec React, Next.js, Node.js, Java, Docker, Terraform et Azure pour soutenir une livraison scalable.",
+        "Amélioration des performances frontend, de la gestion d'état et de la modularité des composants pour des interfaces fluides.",
+        "Intégration de vérifications CI/CD automatisées et d'environnements conteneurisés pour sécuriser les déploiements multi-services.",
       ],
       experienceContentOpkodeLabs:
         "Développement de WattLink, une plateforme de gestion de bornes de recharge multi-tenant basée sur le protocole OCPP 1.6, avec Laravel, PostgreSQL, Redis, Socket.IO, Docker et Grafana, offrant une visibilité en temps réel sur l'état des stations, les tarifs, les sessions et la télémétrie.",
