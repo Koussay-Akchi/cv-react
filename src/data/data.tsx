@@ -74,6 +74,7 @@ import sonarqubeLogo from './../../public/assets/sonarqube.webp';
 import apisixLogo from './../../public/assets/apisix.webp';
 import helmLogo from './../../public/assets/helm.webp';
 import jaegerLogo from './../../public/assets/jaeger.webp';
+import jenkinsLogo from './../../public/assets/jenkins.webp';
 import opentelemetryLogo from './../../public/assets/opentelemetry.webp';
 import kafkaLogo from './../../public/assets/kafka.webp';
 import luaLogo from './../../public/assets/lua.webp';
@@ -90,7 +91,7 @@ import {
   TimelineItem,
 } from './dataDef';
 
-const techImageStyle = {margin: 0, padding: 0};
+const techImageStyle = { margin: 0, padding: 0 };
 
 const birthDate = new Date('2003-01-11');
 
@@ -143,12 +144,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   profileImageSrc2: profilepic2,
   aboutItems: [
-    {label: 'locationLabel', text: 'Tunis', Icon: MapIcon},
-    {label: 'ageLabel', text: `${calculateAge(birthDate)}`, Icon: CalendarIcon},
-    {label: 'nationalityLabel', text: 'nationality', Icon: FlagIcon},
-    {label: 'interestsLabel', text: 'interests', Icon: SparklesIcon},
-    {label: 'studyLabel', text: ' ISTIC Borj Cedria → ESPRIT', Icon: AcademicCapIcon},
-    {label: 'employmentLabel', text: 'HexaFlow', Icon: OfficeBuildingIcon},
+    { label: 'locationLabel', text: 'Tunis', Icon: MapIcon },
+    { label: 'ageLabel', text: `${calculateAge(birthDate)}`, Icon: CalendarIcon },
+    { label: 'nationalityLabel', text: 'nationality', Icon: FlagIcon },
+    { label: 'interestsLabel', text: 'interests', Icon: SparklesIcon },
+    { label: 'studyLabel', text: ' ISTIC Borj Cedria → ESPRIT', Icon: AcademicCapIcon },
+    { label: 'employmentLabel', text: 'HexaFlow', Icon: OfficeBuildingIcon },
   ],
 };
 
@@ -199,7 +200,7 @@ export const skills: Skill[] = [
     name: 'Laravel',
     level: 8,
     image: laravelLogo,
-    categories: ['frontend','backend'],
+    categories: ['frontend', 'backend'],
   },
   {
     name: 'TypeScript',
@@ -406,6 +407,12 @@ export const skills: Skill[] = [
     image: opentelemetryLogo,
     categories: ['cloud/devops'],
   },
+  {
+    name: 'Jenkins',
+    level: 7,
+    image: jenkinsLogo,
+    categories: ['cloud/devops'],
+  }
 ];
 
 export const portfolioItems: PortfolioItem[] = [
@@ -486,19 +493,19 @@ export const experience: TimelineItem[] = [
       <p>
         Technologies :
         {[
-          {name: 'Apache APISIX', imgSrc: apisixLogo},
-          {name: 'Helm', imgSrc: helmLogo},
-          {name: 'Kubernetes', imgSrc: kubernetesLogo},
-          {name: 'Lua', imgSrc: luaLogo},
-          {name: 'Kafka', imgSrc: kafkaLogo},
-          {name: 'Prometheus', imgSrc: prometheusLogo},
-          {name: 'Grafana', imgSrc: grafanaLogo},
-          {name: 'Jaeger', imgSrc: jaegerLogo},
-          {name: 'OpenTelemetry', imgSrc: opentelemetryLogo},
-          {name: 'Redis', imgSrc: redisLogo},
-          {name: 'Node.js', imgSrc: nodeLogo},
-          {name: 'React', imgSrc: reactLogo},
-          {name: 'PostgreSQL', imgSrc: postgresLogo},
+          { name: 'Apache APISIX', imgSrc: apisixLogo },
+          { name: 'Helm', imgSrc: helmLogo },
+          { name: 'Kubernetes', imgSrc: kubernetesLogo },
+          { name: 'Lua', imgSrc: luaLogo },
+          { name: 'Kafka', imgSrc: kafkaLogo },
+          { name: 'Prometheus', imgSrc: prometheusLogo },
+          { name: 'Grafana', imgSrc: grafanaLogo },
+          { name: 'Jaeger', imgSrc: jaegerLogo },
+          { name: 'OpenTelemetry', imgSrc: opentelemetryLogo },
+          { name: 'Redis', imgSrc: redisLogo },
+          { name: 'Node.js', imgSrc: nodeLogo },
+          { name: 'React', imgSrc: reactLogo },
+          { name: 'PostgreSQL', imgSrc: postgresLogo },
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
@@ -526,14 +533,14 @@ export const experience: TimelineItem[] = [
       <p>
         Technologies :
         {[
-          {name: 'OCPP 1.6', imgSrc: ocppLogo},
-          {name: 'Laravel', imgSrc: laravelLogo},
-          {name: 'Python', imgSrc: pythonLogo},
-          {name: 'Redis', imgSrc: redisLogo},
-          {name: 'Docker', imgSrc: dockerLogo},
-          {name: 'PostgreSQL', imgSrc: postgresLogo},
-          {name: 'Socket.IO', imgSrc: socketioLogo},
-          {name: 'Grafana', imgSrc: grafanaLogo},
+          { name: 'OCPP 1.6', imgSrc: ocppLogo },
+          { name: 'Laravel', imgSrc: laravelLogo },
+          { name: 'Python', imgSrc: pythonLogo },
+          { name: 'Redis', imgSrc: redisLogo },
+          { name: 'Docker', imgSrc: dockerLogo },
+          { name: 'PostgreSQL', imgSrc: postgresLogo },
+          { name: 'Socket.IO', imgSrc: socketioLogo },
+          { name: 'Grafana', imgSrc: grafanaLogo },
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
@@ -561,13 +568,13 @@ export const experience: TimelineItem[] = [
       <p>
         Technologies :
         {[
-          {name: 'React', imgSrc: reactLogo},
-          {name: 'Kubernetes', imgSrc: kubernetesLogo},
-          {name: 'Next.js', imgSrc: nextLogo},
-          {name: 'Java', imgSrc: javaLogo},
-          {name: 'Docker', imgSrc: dockerLogo},
-          {name: 'Terraform', imgSrc: terraformLogo},
-          {name: 'Azure', imgSrc: azureLogo},
+          { name: 'React', imgSrc: reactLogo },
+          { name: 'Kubernetes', imgSrc: kubernetesLogo },
+          { name: 'Next.js', imgSrc: nextLogo },
+          { name: 'Java', imgSrc: javaLogo },
+          { name: 'Docker', imgSrc: dockerLogo },
+          { name: 'Terraform', imgSrc: terraformLogo },
+          { name: 'Azure', imgSrc: azureLogo },
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
@@ -595,12 +602,12 @@ export const experience: TimelineItem[] = [
       <p>
         Technologies :
         {[
-          {name: 'React', imgSrc: reactLogo},
-          {name: 'Quarkus Java', imgSrc: quarkusLogo},
-          {name: 'Docker', imgSrc: dockerLogo},
-          {name: 'JWT', imgSrc: jwtLogo},
-          {name: 'Postgres', imgSrc: postgresLogo},
-          {name: 'MongoDB', imgSrc: mongoLogo},
+          { name: 'React', imgSrc: reactLogo },
+          { name: 'Quarkus Java', imgSrc: quarkusLogo },
+          { name: 'Docker', imgSrc: dockerLogo },
+          { name: 'JWT', imgSrc: jwtLogo },
+          { name: 'Postgres', imgSrc: postgresLogo },
+          { name: 'MongoDB', imgSrc: mongoLogo },
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
@@ -671,7 +678,7 @@ export const contact: ContactSection = {
 };
 
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Koussay-Akchi'},
-  {label: 'LeetCode', Icon: LeetCodeIcon, href: 'https://leetcode.com/u/ogNF1G5yTA/'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/koussay-akchi-782765274/'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/Koussay-Akchi' },
+  { label: 'LeetCode', Icon: LeetCodeIcon, href: 'https://leetcode.com/u/ogNF1G5yTA/' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/koussay-akchi-782765274/' },
 ];
