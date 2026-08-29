@@ -1,6 +1,6 @@
 import React, {createContext, FC, ReactNode, useContext, useEffect, useState} from 'react';
 
-import i18n from '../locales/i18n'; // Adjust the import path as needed
+import i18n from '../locales/i18n';
 
 type Language = 'en' | 'fr';
 

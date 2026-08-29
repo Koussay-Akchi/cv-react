@@ -481,6 +481,7 @@ export const experience: TimelineItem[] = [
     location: 'Next Step',
     title: 'nextStepTitle',
     experience: 'experienceContentNextStep',
+    highlights: 'experienceContentNextStepHighlights',
     content: (
       <p>
         Technologies :
@@ -520,6 +521,7 @@ export const experience: TimelineItem[] = [
     location: 'OpkodeLabs',
     title: 'fullStackDev',
     experience: 'experienceContentOpkodeLabs',
+    highlights: 'experienceContentOpkodeLabsHighlights',
     content: (
       <p>
         Technologies :
@@ -554,6 +556,7 @@ export const experience: TimelineItem[] = [
     location: 'HexaFlow',
     title: 'fullStackEngineer',
     experience: 'experienceContent3',
+    highlights: 'experienceContent3Highlights',
     content: (
       <p>
         Technologies :
@@ -587,6 +590,7 @@ export const experience: TimelineItem[] = [
     location: 'Wecraft',
     title: 'fullStackDev',
     experience: 'experienceContent1',
+    highlights: 'experienceContent1Highlights',
     content: (
       <p>
         Technologies :
@@ -619,6 +623,7 @@ export const experience: TimelineItem[] = [
     location: 'Wecraft',
     title: 'pfe',
     experience: 'experienceContent2',
+    highlights: 'experienceContent2Highlights',
   },
 ];
 
@@ -665,9 +670,6 @@ export const contact: ContactSection = {
   ],
 };
 
-/**
- * Social items
- */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Koussay-Akchi'},
   {label: 'LeetCode', Icon: LeetCodeIcon, href: 'https://leetcode.com/u/ogNF1G5yTA/'},

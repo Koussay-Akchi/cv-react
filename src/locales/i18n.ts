@@ -1,9 +1,6 @@
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
 
-// the translations
-// (tip move them in a JSON file and import them,
-// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
 const resources = {
   en: {
     translation: {
@@ -41,15 +38,45 @@ const resources = {
       educationISTICDetail:
         'Comprehensive program that covers software development, design, algorithms and data structures.',
       experienceContent1:
-        'Developing and maintaining a comprehensive CRM for pharmaceutical laboratories 💊. My role includes implementing front-end interfaces, developing back-end functionalities, and designing thorough tests for both.',
+        'Developed and maintained a CRM platform for pharmaceutical laboratories with React, Quarkus, Docker, JWT, PostgreSQL, and MongoDB, covering both the user interface and backend business logic for research, sales, and compliance workflows.',
+      experienceContent1Highlights: [
+        'Implemented front-end interfaces for laboratory operations and internal data entry flows.',
+        'Built backend services and business rules to support product, customer, and order management.',
+        'Added automated testing across the stack to reduce regressions and improve release stability.',
+        'Worked with React, Quarkus, Docker, JWT, PostgreSQL, and MongoDB to deliver a reliable SaaS workflow.',
+      ],
       experienceContent2:
-        "During my internship, I gained hands-on experience in developing and maintaining web applications, contributing to both front-end and back-end tasks. I worked on the CRM for pharmaceutical laboratories, focusing on the architecture's conception and initial implementation, and honing my skills in the technologies mentioned above.",
+        'Worked on the CRM for pharmaceutical laboratories during my internship with React, Quarkus, Docker, JWT, PostgreSQL, and MongoDB, contributing across the stack while learning production-grade web app architecture and development workflows.',
+      experienceContent2Highlights: [
+        'Participated in the design and initial implementation of the application architecture.',
+        'Contributed to both front-end features and back-end services for core business processes.',
+        'Collaborated with the team to improve code quality, maintainability, and deployment practices.',
+        'Used React, Quarkus, Docker, JWT, PostgreSQL, and MongoDB in a real-world SaaS environment.',
+      ],
       experienceContent3:
-        'Developing dynamic web applications using NodeJS, React and Java. Optimizing system architecture by integrating Docker and Kubernetes solutions. collaborated on agile teams to deliver quality features within tight deadlines.',
+        'Developed dynamic web applications with React, Next.js, Node.js, Java, Docker, Terraform, and Azure while improving system architecture with containerized deployments and cloud-ready patterns.',
+      experienceContent3Highlights: [
+        'Delivered customer-facing features in agile teams with a focus on maintainability and timely releases.',
+        'Improved deployment workflows by integrating Docker and cloud infrastructure tooling.',
+        'Helped modernize frontend and backend interactions for smoother user experiences.',
+        'Worked with React, Next.js, Node.js, Java, Docker, Terraform, and Azure to support scalable delivery.',
+      ],
       experienceContentOpkodeLabs:
-        'Developed WattLink, a full-stack multi-tenant EV charging station management platform, built on the OCPP 1.6 protocol. Engineered a real-time monitoring system using Laravel, PostgreSQL, Redis (Pub/Sub), Socket.IO, and Grafana dashboards, enabling operators to remotely manage charging sessions, configure dynamic pricing, and track telemetry data across multi-tenant networks.',
+        'Developed WattLink, a multi-tenant EV charging management platform built on the OCPP 1.6 protocol with Laravel, PostgreSQL, Redis, Socket.IO, Docker, and Grafana, delivering real-time visibility into station status, pricing, sessions, and telemetry data.',
+      experienceContentOpkodeLabsHighlights: [
+        'Built a real-time monitoring system using Laravel, PostgreSQL, Redis Pub/Sub, Socket.IO, and Grafana.',
+        'Implemented remote operator controls for charging sessions, pricing updates, and live telemetry dashboards.',
+        'Designed secure multi-tenant workflows to isolate data and operations across customer networks.',
+        'Delivered production-ready infrastructure and tooling with Python, Docker, and reliable service orchestration.',
+      ],
       experienceContentNextStep:
-        'Designed and deployed a unified API & AI Gateway platform on Apache APISIX, consolidating API management and AI service orchestration into a single cloud-native entry point on Kubernetes. Built multi-tenant isolation, JWT/key-auth authentication, Redis-backed rate limiting, and canary traffic splitting. Implemented an AI orchestration layer supporting OpenAI, Claude, Gemini, and DeepSeek with token-based metering, PII masking via custom Lua plugins, and a Kafka → Elasticsearch billing pipeline. Shipped a React + Node.js self-service Portal with RBAC, observability dashboards (Prometheus, Grafana, Jaeger), and conducted chaos engineering with Chaos Mesh to validate control/data plane failure isolation.',
+        'Designed and deployed a unified API and AI Gateway on Apache APISIX and Kubernetes with Kafka, Redis, Node.js, React, PostgreSQL, and observability tools, centralizing API management and AI orchestration in a cloud-native environment.',
+      experienceContentNextStepHighlights: [
+        'Built AI orchestration for OpenAI, Claude, Gemini, and DeepSeek with token usage tracking and PII masking.',
+        'Implemented multi-tenant isolation, JWT and key authentication, Redis-based rate limiting, and canary routing strategies.',
+        'Delivered a React and Node.js self-service portal with RBAC, observability dashboards, and monitoring coverage.',
+        'Validated service resilience using chaos engineering and cloud-native deployment automation across APIs and data pipelines.',
+      ],
       nextStepTitle: 'Cloud Engineering Internship',
       github: 'GitHub',
       linkedin: 'LinkedIn',
@@ -150,16 +177,46 @@ const resources = {
       fullStackDev: 'Développeur Web Full Stack',
       fullStackEngineer: 'Ingénieur Full Stack',
       experienceContent1:
-        "Développer et maintenir un CRM complet pour les laboratoires pharmaceutiques 💊. Mon rôle comprend la mise en œuvre d'interfaces front-end, le développement de fonctionnalités back-end et la conception de tests approfondis pour les deux.",
+        "Développer et maintenir une plateforme CRM pour les laboratoires pharmaceutiques avec React, Quarkus, Docker, JWT, PostgreSQL et MongoDB, couvrant à la fois l'interface utilisateur et la logique métier backend pour les workflows de recherche, de vente et de conformité.",
+      experienceContent1Highlights: [
+        "Mise en œuvre d'interfaces de laboratoire pour les flux de saisie et les processus internes.",
+        "Création de services backend et de règles métier pour la gestion des produits, clients et commandes.",
+        "Ajout de tests automatisés sur l'ensemble de la stack pour réduire les régressions et améliorer la stabilité des livraisons.",
+        "Livraison d'un workflow SaaS fiable pour les besoins de recherche, vente et conformité.",
+      ],
       pfe: "Stage de fin d'études",
       experienceContent2:
-        "Pendant mon stage, j'ai acquis une expérience pratique dans le développement et la maintenance d'applications Web, en contribuant à la fois aux tâches front-end et back-end. J'ai travaillé sur le CRM des laboratoires pharmaceutiques, en me concentrant sur la conception de l'architecture et la mise en œuvre initiale, et en perfectionnant mes compétences dans les technologies mentionnées ci-dessus.",
+        "Travailler sur le CRM des laboratoires pharmaceutiques pendant mon stage avec React, Quarkus, Docker, JWT, PostgreSQL et MongoDB, en contribuant sur toute la stack tout en apprenant l'architecture et les workflows de développement d'applications web en production.",
+      experienceContent2Highlights: [
+        "Participation à la conception et à la mise en œuvre initiale de l'architecture applicative.",
+        "Contribution aux fonctionnalités front-end et aux services backend pour les processus métier critiques.",
+        "Collaboration avec l'équipe pour améliorer la qualité du code, la maintenabilité et les pratiques de déploiement.",
+        "Utilisation de React, Quarkus, Docker, JWT, PostgreSQL et MongoDB dans un environnement SaaS réel.",
+      ],
       experienceContent3:
-        "Développer des applications web dynamiques en utilisant NodeJS et Java. Optimiser l'architecture des systémes en intégrant des solutions Docker et Kubernetes. J'ai collaboré dans des équipes agiles pour livrer des fonctionnalités de qualité dans des délais serrés.",
+        "Développement d'applications web dynamiques avec React, Next.js, Node.js, Java, Docker, Terraform et Azure, tout en améliorant l'architecture système grâce à des déploiements conteneurisés et à des pratiques cloud-ready.",
+      experienceContent3Highlights: [
+        "Livraison de fonctionnalités orientées client dans des équipes agiles, avec un focus sur la maintenabilité et les livraisons dans les délais.",
+        "Amélioration des workflows de déploiement via Docker et des outils d'infrastructure cloud.",
+        "Modernisation des interactions frontend/backend pour des expériences utilisateur plus fluides.",
+        "Travail avec React, Next.js, Node.js, Java, Docker, Terraform et Azure pour soutenir une livraison scalable.",
+      ],
       experienceContentOpkodeLabs:
-        'Développement de WattLink, une plateforme full-stack multi-tenant de gestion de bornes de recharge pour véhicules électriques (EVSE), basée sur le protocole OCPP 1.6. Conception d’un système de supervision en temps réel utilisant Laravel, PostgreSQL, Redis (Pub/Sub), Socket.IO et des tableaux de bord Grafana, permettant aux opérateurs de gérer à distance les sessions de recharge, de configurer une tarification dynamique et de suivre les données de télémétrie sur des réseaux multi-tenant.',
+        "Développement de WattLink, une plateforme de gestion de bornes de recharge multi-tenant basée sur le protocole OCPP 1.6, avec Laravel, PostgreSQL, Redis, Socket.IO, Docker et Grafana, offrant une visibilité en temps réel sur l'état des stations, les tarifs, les sessions et la télémétrie.",
+      experienceContentOpkodeLabsHighlights: [
+        "Mise en place d'un système de supervision en temps réel avec Laravel, PostgreSQL, Redis Pub/Sub, Socket.IO et Grafana.",
+        "Implémentation de contrôles d'administration à distance pour les sessions de charge et les mises à jour de tarification.",
+        "Conception de workflows multi-tenant sécurisés pour isoler les données et les opérations entre clients.",
+        "Livraison d'une infrastructure de production fiable avec Python, Docker et orchestration de services.",
+      ],
       experienceContentNextStep:
-        "Conception et déploiement d'une passerelle API & IA unifiée sur Apache APISIX, centralisant la gestion des API et l'orchestration des services IA dans un point d'entrée cloud-native sur Kubernetes. Mise en place de l'isolation multi-tenant, de l'authentification JWT/key-auth, du rate limiting distribué via Redis, et du traffic splitting canary. Implémentation d'une couche d'orchestration IA supportant OpenAI, Claude, Gemini et DeepSeek avec métering basé sur les tokens, masquage PII via des plugins Lua personnalisés, et un pipeline de facturation Kafka → Elasticsearch. Livraison d'un portail self-service React + Node.js avec RBAC, tableaux de bord d'observabilité (Prometheus, Grafana, Jaeger), et conduite de tests de chaos avec Chaos Mesh pour valider l'isolation entre plan de contrôle et plan de données.",
+        "Conception et déploiement d'une passerelle API & IA sur Apache APISIX et Kubernetes avec Kafka, Redis, Node.js, React, PostgreSQL et outils d'observabilité, centralisant la gestion des API et l'orchestration IA dans un environnement cloud-native.",
+      experienceContentNextStepHighlights: [
+        "Construction d'une orchestration IA pour OpenAI, Claude, Gemini et DeepSeek avec suivi de tokens et masquage PII.",
+        "Mise en place d'une isolation multi-tenant, d'une authentification JWT et clé, du rate limiting Redis et du traffic splitting canary.",
+        "Livraison d'un portail self-service React + Node.js avec RBAC, tableaux de bord d'observabilité et monitoring.",
+        "Validation de la résilience des services via chaos engineering et automatisation de déploiement cloud-native.",
+      ],
       nextStepTitle: 'Stage en Ingénierie Cloud',
       hero: 'Accueil',
       about: 'À propos',
@@ -208,7 +265,7 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: 'en', // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+  lng: 'en',
   interpolation: {
     escapeValue: false,
   },

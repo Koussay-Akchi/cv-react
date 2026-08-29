@@ -5,7 +5,6 @@ import {SectionId} from '../data/data';
 
 export const useNavObserver = (selectors: string, handler: (section: SectionId | null) => void) => {
   useEffect(() => {
-    // Get all sections
     const headings = document.querySelectorAll(selectors);
     const headingsArray = Array.from(headings);
     const indexMap = new Map(headingsArray.map((el, i) => [el.getAttribute('id'), i]));
@@ -51,14 +50,11 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
         rootMargin: '0px 0px -70% 0px',
       },
     );
-    // Observe all the Sections
     headings.forEach(section => {
       observer.observe(section);
     });
-    // Cleanup
     return () => {
       observer.disconnect();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Dependency here is the post content.
+  }, []);
 };

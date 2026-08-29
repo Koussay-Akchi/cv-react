@@ -7,7 +7,6 @@ import About from '../components/Sections/About';
 import Hero from '../components/Sections/Hero';
 import {homePageMeta} from '../data/data';
 
-// eslint-disable-next-line react-memo/require-memo
 import Header from '../components/Sections/Header';
 import dynamic from 'next/dynamic';
 

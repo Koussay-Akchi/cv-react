@@ -89,7 +89,6 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
   const {t} = useTranslation();
 
   useEffect(() => {
-    // Avoid hydration styling errors by setting mobile in useEffect
     if (isMobile) {
       setMobile(true);
     }

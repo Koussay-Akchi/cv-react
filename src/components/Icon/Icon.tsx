@@ -3,9 +3,9 @@ import {FC, memo} from 'react';
 export interface IconProps extends React.HTMLAttributes<SVGSVGElement> {
   svgRef?: React.Ref<SVGSVGElement>;
   transform?: string;
-  viewBox?: string; // Allow viewBox to be passed as a prop
-  width?: number; // Allow width to be passed as a prop
-  height?: number; // Allow height to be passed as a prop
+  viewBox?: string;
+  width?: number;
+  height?: number;
 }
 
 const Icon: FC<IconProps> = memo(

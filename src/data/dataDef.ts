@@ -17,9 +17,6 @@ export interface HomepageMeta {
   twitterImageUrl?: string;
 }
 
-/**
- * Hero section
- */
 export interface Hero {
   imageSrc: string;
   name: string;
@@ -34,9 +31,6 @@ interface HeroActionItem {
   Icon?: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
 }
 
-/**
- * About section
- */
 export interface About {
   profileImageSrc?: string;
   profileImageSrc2?: string;
@@ -50,18 +44,11 @@ export interface AboutItem {
   Icon?: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
 }
 
-/**
- * Stat section
- */
 export interface Stat {
   title: string;
   value: number;
   Icon?: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
 }
-
-/**
- * Skills section
- */
 
 export interface Skill {
   name: string;
@@ -72,9 +59,6 @@ export interface Skill {
   categories: string[];
 }
 
-/**
- * Portfolio section
- */
 export interface PortfolioItem {
   title: string;
   description: string;
@@ -83,9 +67,6 @@ export interface PortfolioItem {
   github?: string;
 }
 
-/**
- * Resume section
- */
 export interface TimelineItem {
   date: string;
   location: string;
@@ -93,11 +74,9 @@ export interface TimelineItem {
   content?: React.JSX.Element;
   education?: string;
   experience?: string;
+  highlights?: string;
 }
 
-/**
- * Testimonial section
- */
 export interface TestimonialSection {
   imageSrc?: string | StaticImageData;
   testimonials: Testimonial[];
@@ -109,9 +88,6 @@ export interface Testimonial {
   text: string;
 }
 
-/**
- * Contact section
- */
 export interface ContactSection {
   headerText?: string;
   description?: string;
@@ -142,9 +118,6 @@ export interface ContactValue {
   srLabel: string;
 }
 
-/**
- * Social items
- */
 export interface Social {
   label: string;
   Icon: FC<IconProps>;

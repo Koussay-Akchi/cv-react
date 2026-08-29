@@ -4,8 +4,15 @@ import {useTranslation} from 'react-i18next';
 import type {TimelineItem} from '../../../data/dataDef';
 
 const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
-  const {title, date, location, content, education, experience} = item;
+  const {title, date, location, content, education, experience, highlights} = item;
   const {t} = useTranslation();
+
+  const bulletList = highlights
+    ? (Array.isArray(t(highlights, {returnObjects: true}))
+        ? (t(highlights, {returnObjects: true}) as string[])
+        : [t(highlights)])
+    : [];
+
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">
@@ -17,10 +24,15 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
         </div>
       </div>
       <div className="flex flex-col gap-y-2">
-        {experience &&
-          t(experience)
-            .split(/\.(?!\d)/)
-            .map((sentence, index) => sentence.trim() && <p key={index}>{sentence}.</p>)}
+        {experience && <p>{t(experience)}</p>}
+
+        {bulletList.length > 0 && (
+          <ul className="ml-5 list-disc space-y-1 text-left text-sm sm:text-base">
+            {bulletList.map((bullet, index) => (
+              <li key={`${title}-${index}`}>{bullet}</li>
+            ))}
+          </ul>
+        )}
 
         {content}
       </div>
