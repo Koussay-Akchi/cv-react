@@ -72,9 +72,11 @@ const resources = {
       experienceContentNextStep:
         'Designed and deployed a unified API and AI Gateway on Apache APISIX and Kubernetes with Kafka, Redis, Node.js, React, PostgreSQL, and observability tools, centralizing API management, load balancing, and AI orchestration in a cloud-native environment.',
       experienceContentNextStepHighlights: [
-        'Built AI orchestration for OpenAI, Claude, Gemini, and DeepSeek with token usage tracking and PII masking.',
-        'Implemented multi-tenant isolation, JWT and key authentication, Redis-based rate limiting, load balancing, and canary routing strategies.',
-        'Delivered a React and Node.js self-service portal with RBAC, observability dashboards, and monitoring coverage.',
+        'Built AI gateway orchestration with multi-model routing (ai-proxy-multi), prompt templating and decoration, dynamic request rewrites, and PII masking / data anonymization guardrails.',
+        'Configured edge traffic management using distributed rate/connection limiting, traffic splitting, circuit breaking (api-breaker), IP/consumer restrictions, and request mirroring.',
+        'Implemented payload transformations, gRPC transcoding, response rewrites, and schema validation with custom Lua and serverless functions.',
+        'Streamlined observability and centralized audit streaming via OpenTelemetry, Prometheus metrics, Kafka, and Elasticsearch logging pipelines.',
+        'Delivered a React and Node.js self-service portal with RBAC and monitoring dashboards.',
         'Validated service resilience using chaos engineering and automated CI/CD deployment pipelines across cloud-native environments.',
       ],
       nextStepTitle: 'Cloud Engineering Internship',
@@ -212,10 +214,12 @@ const resources = {
       experienceContentNextStep:
         "Conception et déploiement d'une passerelle API & IA sur Apache APISIX et Kubernetes avec Kafka, Redis, Node.js, React, PostgreSQL et outils d'observabilité, centralisant la gestion des API, le load balancing et l'orchestration IA dans un environnement cloud-native.",
       experienceContentNextStepHighlights: [
-        "Construction d'une orchestration IA pour OpenAI, Claude, Gemini et DeepSeek avec suivi de tokens et masquage PII.",
-        "Mise en place d'une isolation multi-tenant, d'une authentification JWT et clé, du rate limiting Redis, du load balancing et du traffic splitting canary.",
-        "Livraison d'un portail self-service React + Node.js avec RBAC, tableaux de bord d'observabilité et monitoring.",
-        "Validation de la résilience des services via chaos engineering et automatisation de pipelines CI/CD cloud-native.",
+        "Mise en place de l'orchestration IA multi-modèles (ai-proxy-multi), templating/décoration de prompts, réécriture de requêtes et masquage PII / anonymisation de données.",
+        "Configuration de la gestion de trafic : rate/connection limiting distribué, traffic splitting, coupe-circuit (api-breaker), restrictions IP/consommateurs et duplication de requêtes (proxy-mirror).",
+        "Implémentation des transformations de payload, transcodage gRPC, réécriture de réponses et validation de requêtes via plugins Lua et fonctions serverless.",
+        "Centralisation de l'observabilité et streaming d'audit avec OpenTelemetry, métriques Prometheus, Kafka et pipelines de logging Elasticsearch.",
+        "Livraison d'un portail self-service React et Node.js avec RBAC et tableaux de bord de surveillance.",
+        "Validation de la résilience grâce au chaos engineering et à l'automatisation des pipelines CI/CD dans des environnements cloud-native.",
       ],
       nextStepTitle: 'Stage en Ingénierie Cloud',
       hero: 'Accueil',
