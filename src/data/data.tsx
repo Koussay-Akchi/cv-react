@@ -691,14 +691,14 @@ export const certifications: Certification[] = [
     name: 'certAzureNetworking',
     issuer: 'Microsoft',
     date: 'certDateAzureNetworking',
-    url: 'https://learn.microsoft.com/api/credentials/share/en-us/koussayakchi-5001/FAE4428DA68E605F?sharingId=7C446232C661FA23',
+    url: 'https://learn.microsoft.com/api/credentials/share/en-us/koussayakchi/FAE4428DA68E605F?sharingId=7C446232C661FA23',
     logo: microsoftLogo,
   },
   {
     name: 'certAzureManagementTasks',
     issuer: 'Microsoft',
     date: 'certDateAzureManagementTasks',
-    url: 'https://learn.microsoft.com/api/credentials/share/en-us/koussayakchi-5001/63B2C35CA975068F?sharingId=7C446232C661FA23',
+    url: 'https://learn.microsoft.com/api/credentials/share/en-us/koussayakchi/63B2C35CA975068F?sharingId=7C446232C661FA23',
     logo: microsoftLogo,
   },
   {
