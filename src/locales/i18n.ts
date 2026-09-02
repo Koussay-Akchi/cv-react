@@ -127,6 +127,9 @@ const resources = {
       certAzureNetworking:
         'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
       certDateAzureNetworking: 'September 2026',
+      certAzureManagementTasks:
+        'Microsoft Applied Skills: Get started with Azure management tasks',
+      certDateAzureManagementTasks: 'September 2026',
       certCCNA: 'CCNA: Switching, Routing, and Wireless Essentials',
       certDateCCNA: 'July 2025',
     },
@@ -273,6 +276,9 @@ const resources = {
       certAzureNetworking:
         'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
       certDateAzureNetworking: 'Septembre 2026',
+      certAzureManagementTasks:
+        'Microsoft Applied Skills: Get started with Azure management tasks',
+      certDateAzureManagementTasks: 'Septembre 2026',
       certCCNA: 'CCNA: Switching, Routing, and Wireless Essentials',
       certDateCCNA: 'Juillet 2025',
     },

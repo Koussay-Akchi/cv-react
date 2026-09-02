@@ -695,6 +695,13 @@ export const certifications: Certification[] = [
     logo: microsoftLogo,
   },
   {
+    name: 'certAzureManagementTasks',
+    issuer: 'Microsoft',
+    date: 'certDateAzureManagementTasks',
+    url: 'https://learn.microsoft.com/api/credentials/share/en-us/koussayakchi-5001/63B2C35CA975068F?sharingId=7C446232C661FA23',
+    logo: microsoftLogo,
+  },
+  {
     name: 'certCCNA',
     issuer: 'Cisco',
     date: 'certDateCCNA',
