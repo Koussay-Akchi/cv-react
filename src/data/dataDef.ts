@@ -123,3 +123,12 @@ export interface Social {
   Icon: FC<IconProps>;
   href: string;
 }
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  date?: string;
+  url: string;
+  logo: string | StaticImageData;
+}
+

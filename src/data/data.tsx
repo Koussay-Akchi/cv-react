@@ -78,8 +78,11 @@ import jenkinsLogo from './../../public/assets/jenkins.webp';
 import opentelemetryLogo from './../../public/assets/opentelemetry.webp';
 import kafkaLogo from './../../public/assets/kafka.webp';
 import luaLogo from './../../public/assets/lua.webp';
+import microsoftLogo from './../../public/assets/microsoft_logo.jpg';
+import ciscoLogo from './../../public/assets/cisco_logo.jpg';
 import {
   About,
+  Certification,
   ContactSection,
   ContactType,
   Hero,
@@ -682,3 +685,21 @@ export const socialLinks: Social[] = [
   { label: 'LeetCode', Icon: LeetCodeIcon, href: 'https://leetcode.com/u/ogNF1G5yTA/' },
   { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/koussay-akchi-782765274/' },
 ];
+
+export const certifications: Certification[] = [
+  {
+    name: 'certAzureNetworking',
+    issuer: 'Microsoft',
+    date: 'certDateAzureNetworking',
+    url: 'https://learn.microsoft.com/api/credentials/share/en-us/koussayakchi-5001/FAE4428DA68E605F?sharingId=7C446232C661FA23',
+    logo: microsoftLogo,
+  },
+  {
+    name: 'certCCNA',
+    issuer: 'Cisco',
+    date: 'certDateCCNA',
+    url: 'https://www.credly.com/badges/058d5f66-db69-484d-88be-525bb33c98c9',
+    logo: ciscoLogo,
+  },
+];
+

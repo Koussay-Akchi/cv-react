@@ -6,8 +6,9 @@ import arabicLogo from '../../../../public/assets/arabic.png';
 import englishLogo from '../../../../public/assets/english.png';
 import frenchLogo from '../../../../public/assets/french.png';
 
-import {education, experience, SectionId, skills} from '../../../data/data';
+import {certifications, education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
+import {CertificationsGrid} from './Certifications';
 import ResumeSection from './ResumeSection';
 import {SkillsGrid} from './Skills';
 import TimelineItem from './TimelineItem';
@@ -26,6 +27,9 @@ const Resume: FC = memo(() => {
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
+        </ResumeSection>
+        <ResumeSection title={t('certifications')}>
+          <CertificationsGrid certifications={certifications} />
         </ResumeSection>
         <ResumeSection title={t('skills')}>
           <SkillsGrid skills={skills} />

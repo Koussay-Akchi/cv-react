@@ -123,6 +123,12 @@ const resources = {
       'Other Tools': 'Other Tools',
       'Search skills...': 'Search skills...',
       'No skills found.': 'No skills found',
+      certifications: 'Certifications',
+      certAzureNetworking:
+        'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
+      certDateAzureNetworking: 'September 2026',
+      certCCNA: 'CCNA: Switching, Routing, and Wireless Essentials',
+      certDateCCNA: 'July 2025',
     },
   },
   fr: {
@@ -263,6 +269,12 @@ const resources = {
       'Other Tools': 'Autres outils',
       'Search skills...': 'Recherche...',
       'No skills found.': 'Aucune compétence trouvée',
+      certifications: 'Certifications',
+      certAzureNetworking:
+        'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
+      certDateAzureNetworking: 'Septembre 2026',
+      certCCNA: 'CCNA: Switching, Routing, and Wireless Essentials',
+      certDateCCNA: 'Juillet 2025',
     },
   },
 };
