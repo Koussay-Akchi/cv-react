@@ -5,9 +5,8 @@ import {SectionId} from '../data/data';
 
 export const useNavObserver = (selectors: string, handler: (section: SectionId | null) => void) => {
   useEffect(() => {
-    const headings = document.querySelectorAll(selectors);
-    const headingsArray = Array.from(headings);
-    const indexMap = new Map(headingsArray.map((el, i) => [el.getAttribute('id'), i]));
+    let headingsArray: Element[] = [];
+    let indexMap = new Map<string, number>();
     const headerWrapper = document.getElementById(headerID);
 
     const observer = new IntersectionObserver(
@@ -17,7 +16,7 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
         entries.forEach(entry => {
           const currentY = entry.boundingClientRect.y;
           const id = entry.target.getAttribute('id');
-          const currentIndex = indexMap.get(id);
+          const currentIndex = id ? indexMap.get(id) : undefined;
 
           if (headerWrapper && currentIndex !== undefined) {
             const decision = {
@@ -50,11 +49,34 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
         rootMargin: '0px 0px -70% 0px',
       },
     );
-    headings.forEach(section => {
-      observer.observe(section);
+
+    const observedSet = new Set<Element>();
+    const updateObservedElements = () => {
+      const headings = document.querySelectorAll(selectors);
+      headingsArray = Array.from(headings);
+      indexMap = new Map(headingsArray.map((el, i) => [el.getAttribute('id') || '', i]));
+      headingsArray.forEach(section => {
+        if (!observedSet.has(section)) {
+          observer.observe(section);
+          observedSet.add(section);
+        }
+      });
+    };
+
+    updateObservedElements();
+
+    const mutationObserver = new MutationObserver(() => {
+      updateObservedElements();
     });
+
+    mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+
     return () => {
+      mutationObserver.disconnect();
       observer.disconnect();
     };
-  }, []);
+  }, [handler, selectors]);
 };
