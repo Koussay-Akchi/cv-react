@@ -127,6 +127,9 @@ const resources = {
       certAzureNetworking:
         'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
       certDateAzureNetworking: 'September 2026',
+      certCloudSecurity:
+        'Microsoft Applied Skills: Get started with cloud security and monitoring tasks',
+      certDateCloudSecurity: 'September 2026',
       certAzureManagementTasks:
         'Microsoft Applied Skills: Get started with Azure management tasks',
       certDateAzureManagementTasks: 'September 2026',
@@ -276,6 +279,9 @@ const resources = {
       certAzureNetworking:
         'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
       certDateAzureNetworking: 'Septembre 2026',
+      certCloudSecurity:
+        'Microsoft Applied Skills: Get started with cloud security and monitoring tasks',
+      certDateCloudSecurity: 'Septembre 2026',
       certAzureManagementTasks:
         'Microsoft Applied Skills: Get started with Azure management tasks',
       certDateAzureManagementTasks: 'Septembre 2026',
