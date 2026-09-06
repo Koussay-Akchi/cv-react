@@ -124,6 +124,9 @@ const resources = {
       'Search skills...': 'Search skills...',
       'No skills found.': 'No skills found',
       certifications: 'Certifications',
+      certAzureContainerApps:
+        'Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps',
+      certDateAzureContainerApps: 'September 2026',
       certAzureNetworking:
         'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
       certDateAzureNetworking: 'September 2026',
@@ -276,6 +279,9 @@ const resources = {
       'Search skills...': 'Recherche...',
       'No skills found.': 'Aucune compétence trouvée',
       certifications: 'Certifications',
+      certAzureContainerApps:
+        'Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps',
+      certDateAzureContainerApps: 'Septembre 2026',
       certAzureNetworking:
         'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
       certDateAzureNetworking: 'Septembre 2026',
