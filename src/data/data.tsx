@@ -635,6 +635,36 @@ export const experience: TimelineItem[] = [
     experience: 'experienceContent2',
     highlights: 'experienceContent2Highlights',
   },
+  {
+    date: 'June 2023 - July 2023',
+    location: 'Alliance Technologie',
+    title: 'summerInternship',
+    experience: 'experienceContentAlliance',
+    highlights: 'experienceContentAllianceHighlights',
+    content: (
+      <p>
+        Technologies :
+        {[
+          { name: 'C#', imgSrc: cLogo },
+          { name: 'Java', imgSrc: javaLogo },
+          { name: 'PostgreSQL', imgSrc: postgresLogo },
+        ].map((tech, index, array) => (
+          <span className="inline-flex items-center gap-1" key={index}>
+            &nbsp;{tech.name}
+            <Image
+              alt={tech.name}
+              className="my-0 inline-block rounded-md py-0 align-middle"
+              height={20}
+              src={tech.imgSrc}
+              style={techImageStyle}
+              width={20}
+            />
+            {index < array.length - 1 && ' -'}
+          </span>
+        ))}
+      </p>
+    ),
+  },
 ];
 
 export const testimonial: TestimonialSection = {
