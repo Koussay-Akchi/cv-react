@@ -35,6 +35,7 @@ const resources = {
         'Written in Python : Input Video → split frames to images → Detect cars using YOLO model → Draw rectangles around coordinates in image result → Track and ID cars using SSIM → If >30 frames since last calculation for that car, use contour math to try and find a visible licence plate → if found, extract and run OCR → if succesful, write the result on the result image → compile all result frames into output video.',
       educationEsprit: 'Software engineer',
       educationEspritDetail: '🕒 Currently studying to get my software engineering degree. 🕒',
+      educationISTIC: "Bachelor's Degree in Computer Science (GLSI)",
       educationISTICDetail:
         'Comprehensive program that covers software development, design, algorithms and data structures.',
       experienceContent1:
@@ -174,6 +175,7 @@ const resources = {
         "Écrit en Python : vidéo input → diviser les trames en images → détecter les voitures à l'aide du modèle YOLO → tracer des rectangles autour des coordonnées dans l'image sortie → suivre et identifier les voitures à l'aide de SSIM → si >30 images depuis le dernier calcul pour cette voiture, utiliser des calculs de contour pour essayer de trouver une plaque d'immatriculation visible → si trouvée, extraire et exécuter l'OCR → si réussi, écrire le résultat sur l'image sortie→ compiler toutes les trames de résultat dans la vidéo de sortie.",
       educationEsprit: 'Ingenierie',
       educationEspritDetail: '🕒 En cours d’études pour mon diplôme en ingénierie logicielle. 🕒',
+      educationISTIC: 'Licence en informatique (GLSI)',
       educationISTICDetail:
         'Programme complet qui couvre le développement de logiciels, la conception, les algorithmes et les structures de données.',
       github: 'GitHub',

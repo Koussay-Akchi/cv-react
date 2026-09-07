@@ -480,7 +480,7 @@ export const education: TimelineItem[] = [
   {
     date: '2021 - 2024',
     location: 'ISTIC Borj Cedria',
-    title: 'Licence GLSI',
+    title: 'educationISTIC',
     education: 'educationISTICDetail',
   },
 ];
