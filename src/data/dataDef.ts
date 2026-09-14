@@ -68,7 +68,7 @@ export interface ShowcaseImage {
 export interface PortfolioItem {
   title: string;
   description: string;
-  url: string;
+  url?: string;
   image: string | StaticImageData;
   github?: string;
   tags?: string[];

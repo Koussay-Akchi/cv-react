@@ -146,7 +146,7 @@ const ItemOverlay: FC<{item: PortfolioItem; onOpenShowcase?: () => void}> = memo
         if (mobile && !showOverlay) {
           event.preventDefault();
           setShowOverlay(!showOverlay);
-        } else {
+        } else if (url) {
           capture('portfolio_item_clicked', {title, url});
           window.open(url, '_blank', 'noopener,noreferrer');
         }

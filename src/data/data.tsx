@@ -422,9 +422,8 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'cluverseTitle',
     description: 'cluverseDescription',
-    url: 'https://github.com/Koussay-Akchi',
     image: '/assets/cluverse images/global.png',
-    github: 'https://github.com/Koussay-Akchi',
+    github: 'https://github.com/Koussay-Akchi/cluverse',
     tags: ['OpenStack', 'Kubernetes', 'Spring Boot', 'FastAPI', 'Meta Prophet', 'Ansible', 'Grafana', 'Docker'],
     showcaseId: 'cluverse',
     gallery: [
