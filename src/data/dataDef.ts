@@ -59,12 +59,21 @@ export interface Skill {
   categories: string[];
 }
 
+export interface ShowcaseImage {
+  src: string;
+  title?: string;
+  caption?: string;
+}
+
 export interface PortfolioItem {
   title: string;
   description: string;
   url: string;
   image: string | StaticImageData;
   github?: string;
+  tags?: string[];
+  gallery?: ShowcaseImage[];
+  showcaseId?: string;
 }
 
 export interface TimelineItem {
