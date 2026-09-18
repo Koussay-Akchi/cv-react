@@ -749,7 +749,7 @@ export const certifications: Certification[] = [
     name: 'certAzureContainerApps',
     issuer: 'Microsoft',
     date: 'certDateAzureContainerApps',
-    url: 'https://learn.microsoft.com/api/credentials/share/en-us/koussayakchi/9FC89CD5F97D781C?sharingId=7C446232C661FA23',
+    url: 'https://learn.microsoft.com/api/credentials/share/en-us/koussayakchi/9FC89CD5F97D781C',
     logo: microsoftLogo,
   },
   {
