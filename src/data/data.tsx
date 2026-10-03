@@ -515,6 +515,43 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'September 2026 - Present',
+    location: 'Hergli Mayor SL / Freelance (Spain)',
+    title: 'fullStackDev',
+    experience: 'experienceContentSpain',
+    highlights: 'experienceContentSpainHighlights',
+    content: (
+      <p>
+        Technologies :
+        {[
+          { name: 'OCPP 2.1', imgSrc: ocppLogo },
+          { name: 'OCPP 1.6', imgSrc: ocppLogo },
+          { name: 'Java', imgSrc: javaLogo },
+          { name: 'Kubernetes', imgSrc: kubernetesLogo },
+          { name: 'Python', imgSrc: pythonLogo },
+          { name: 'Redis', imgSrc: redisLogo },
+          { name: 'Docker', imgSrc: dockerLogo },
+          { name: 'PostgreSQL', imgSrc: postgresLogo },
+          { name: 'Socket.IO', imgSrc: socketioLogo },
+          { name: 'Grafana', imgSrc: grafanaLogo },
+        ].map((tech, index, array) => (
+          <span className="inline-flex items-center gap-1" key={index}>
+            &nbsp;{tech.name}
+            <Image
+              alt={tech.name}
+              className="my-0 inline-block rounded-md py-0 align-middle"
+              height={20}
+              src={tech.imgSrc}
+              style={techImageStyle}
+              width={20}
+            />
+            {index < array.length - 1 && ' -'}
+          </span>
+        ))}
+      </p>
+    ),
+  },
+  {
     date: 'June 2026 - August 2026',
     location: 'Next Step',
     title: 'nextStepTitle',
@@ -555,7 +592,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'July 2025 - Present',
+    date: 'July 2025 - August 2026',
     location: 'OpkodeLabs',
     title: 'fullStackDev',
     experience: 'experienceContentOpkodeLabs',

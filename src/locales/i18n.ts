@@ -62,6 +62,14 @@ const resources = {
         'Enhanced frontend performance, state management, and component modularity for seamless user experiences.',
         'Integrated automated CI/CD checks and containerized environments to ensure reliable multi-service deployments.',
       ],
+      experienceContentSpain:
+        'Architected and scaled next-generation EV charging management systems (CSMS) supporting dual OCPP 1.6-J and OCPP 2.0.1 / 2.1 protocol suites, enabling smart charging profiles, bi-directional energy dispatch, dynamic tariff engines, and secure high-throughput station telemetry in Spain.',
+      experienceContentSpainHighlights: [
+        'Engineered robust dual-protocol OCPP (1.6-J & 2.1) communication engines with WebSocket event streaming, ISO 15118 smart charging profiles, and real-time transaction lifecycle processing.',
+        'Built high-throughput real-time telemetry processing pipelines handling sub-second meter values using Redis Pub/Sub, Socket.IO, PostgreSQL, and time-series monitoring dashboards in Grafana.',
+        'Implemented automated smart charging schedules, dynamic load management (DLM), flexible tariff rate calculation, and remote hardware diagnostics / firmware update workflows.',
+        'Architected resilient multi-tenant infrastructure orchestrating Java and Python microservices on Kubernetes and Docker with automated failover and isolated tenant data partitions.',
+      ],
       experienceContentOpkodeLabs:
         'Developed WattLink, a multi-tenant EV charging management platform built on the OCPP 1.6 protocol with Laravel, PostgreSQL, Redis, Socket.IO, Docker, and Grafana, delivering real-time visibility into station status, pricing, sessions, and telemetry data.',
       experienceContentOpkodeLabsHighlights: [
@@ -256,6 +264,14 @@ const resources = {
         "Amélioration des performances frontend, de la gestion d'état et de la modularité des composants pour des interfaces fluides.",
         "Intégration de vérifications CI/CD automatisées et d'environnements conteneurisés pour sécuriser les déploiements multi-services.",
       ],
+      experienceContentSpain:
+        "Conception et mise à l'échelle d'une plateforme de gestion de bornes de recharge pour véhicules électriques (CSMS) de nouvelle génération en Espagne, prenant en charge les protocoles OCPP 1.6-J et OCPP 2.0.1 / 2.1, avec profils de recharge intelligente, gestion dynamique de puissance, tarification avancée et flux télémétriques haute performance.",
+      experienceContentSpainHighlights: [
+        "Développement de moteurs de communication bidirectionnels bi-protocoles OCPP (1.6-J et 2.1) via WebSockets, gestion des profils de recharge intelligente (ISO 15118) et traitement sécurisé du cycle de vie des sessions.",
+        "Mise en place de pipelines de traitement télémétrique temps réel haute cadence pour les relevés de compteurs instantanés avec Redis Pub/Sub, Socket.IO, PostgreSQL et métriques Grafana.",
+        "Implémentation d'algorithmes de délestage et de répartition dynamique de charge (DLM), calcul automatisé de grilles tarifaires et télégestion du matériel (diagnostics et firmwares).",
+        "Architecture d'infrastructures multi-tenant résilientes orchestrant des microservices Java et Python sous Kubernetes et Docker, garantissant une isolation stricte des données et des opérations par client.",
+      ],
       experienceContentOpkodeLabs:
         "Développement de WattLink, une plateforme de gestion de bornes de recharge multi-tenant basée sur le protocole OCPP 1.6, avec Laravel, PostgreSQL, Redis, Socket.IO, Docker et Grafana, offrant une visibilité en temps réel sur l'état des stations, les tarifs, les sessions et la télémétrie.",
       experienceContentOpkodeLabsHighlights: [
@@ -297,6 +313,8 @@ const resources = {
       'Febuary 2024 - Present': 'Fevrier 2024 - Present',
       'January 2024 - June 2024': 'Janvier 2024 - Juin 2024',
       'July 2025 - Present': 'Juillet 2025 - Présent',
+      'July 2025 - August 2026': 'Juillet 2025 - Août 2026',
+      'September 2026 - Present': 'Septembre 2026 - Présent',
       test1:
         "Koussay est un membre d'équipe exceptionnel avec un œil attentif aux détails. Ses contributions lors de nos hackathons ont été déterminantes pour notre succès. Ses compétences techniques sont de haut niveau, et il sait résoudre les problèmes de manière innovante.",
       test2:
