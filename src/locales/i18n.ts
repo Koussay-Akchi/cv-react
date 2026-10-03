@@ -55,7 +55,7 @@ const resources = {
         'Structured data schemas and storage strategies across relational and NoSQL databases for laboratory workflows.',
       ],
       experienceContent3:
-        'Developed dynamic web applications with React, Next.js, Node.js, Java, Docker, Terraform, and Azure while improving system architecture with containerized deployments and cloud-ready patterns.',
+        'Developed dynamic web applications with React, Next.js, Node.js, Java, Docker, Terraform, Azure, and AWS while improving system architecture with containerized deployments and cloud-ready patterns.',
       experienceContent3Highlights: [
         'Delivered customer-facing features in agile teams with a focus on maintainability and timely releases.',
         'Improved deployment workflows by integrating Docker and cloud infrastructure tooling.',
@@ -257,7 +257,7 @@ const resources = {
         "Structuration des schémas de données et stratégies de stockage entre bases relationnelles et NoSQL pour les opérations de laboratoire.",
       ],
       experienceContent3:
-        "Développement d'applications web dynamiques avec React, Next.js, Node.js, Java, Docker, Terraform et Azure, tout en améliorant l'architecture système grâce à des déploiements conteneurisés et à des pratiques cloud-ready.",
+        "Développement d'applications web dynamiques avec React, Next.js, Node.js, Java, Docker, Terraform, Azure et AWS, tout en améliorant l'architecture système grâce à des déploiements conteneurisés et à des pratiques cloud-ready.",
       experienceContent3Highlights: [
         "Livraison de fonctionnalités orientées client dans des équipes agiles, avec un focus sur la maintenabilité et les livraisons dans les délais.",
         "Amélioration des workflows de déploiement via Docker et des outils d'infrastructure cloud.",

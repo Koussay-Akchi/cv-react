@@ -53,6 +53,7 @@ import tirfly from './../../public/assets/tirfly.webp';
 import typescriptLogo from './../../public/assets/typescript-logo.png';
 import ymseddiImage from './../../public/assets/ymseddi.webp';
 import azureLogo from './../../public/assets/azure.png';
+import awsLogo from './../../public/assets/aws.svg';
 import terraformLogo from './../../public/assets/terraform.png';
 import shortenImage from './../../public/assets/shorten.webp';
 import ansibleLogo from './../../public/assets/ansible.webp';
@@ -167,6 +168,12 @@ export const skills: Skill[] = [
     name: 'Azure',
     level: 5,
     image: azureLogo,
+    categories: ['cloud/devops'],
+  },
+  {
+    name: 'AWS',
+    level: 7,
+    image: awsLogo,
     categories: ['cloud/devops'],
   },
   {
@@ -643,6 +650,7 @@ export const experience: TimelineItem[] = [
           { name: 'Docker', imgSrc: dockerLogo },
           { name: 'Terraform', imgSrc: terraformLogo },
           { name: 'Azure', imgSrc: azureLogo },
+          { name: 'AWS', imgSrc: awsLogo },
         ].map((tech, index, array) => (
           <span className="inline-flex items-center gap-1" key={index}>
             &nbsp;{tech.name}
