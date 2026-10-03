@@ -22,7 +22,7 @@
     "classnames": "^2.3.1",
     "emailjs-com": "^3.2.0",
     "i18next": "^23.15.1",
-    "next": "16.1.0",
+    "next": "16.3.8",
     "posthog-js": "^1.373.5",
     "react": "19",
     "react-dom": "19",
@@ -32,10 +32,10 @@
     "ts-pattern": "^4.0.3"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "16.1.0",
+    "@next/eslint-plugin-next": "16.3.8",
     "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/typography": "^0.5.2",
-    "@types/node": "^17.0.21",
+    "@types/node": "^22.0.0",
     "@types/react": "19",
     "@types/react-dom": "19",
     "@types/tailwindcss": "^3.0.9",
@@ -43,9 +43,9 @@
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.1.1",
+    "cssnano": "^7.0.0",
     "eslint": "^8.10.0",
-    "eslint-config-next": "16.1.0",
+    "eslint-config-next": "16.3.8",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -58,12 +58,12 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "postcss": "^8.4.8",
-    "postcss-preset-env": "^7.4.2",
+    "postcss-preset-env": "^10.0.0",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.8",
-    "rimraf": "^3.0.0",
+    "rimraf": "^6.0.0",
     "sass": "^1.49.9",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.5",
     "sort-package-json": "^1.54.0",
     "stylelint": "^14.5.3",
     "stylelint-config-recommended": "^7.0.0",
@@ -81,5 +81,8 @@
   "resolutions": {
     "@types/react": "19",
     "@types/react-dom": "19"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
