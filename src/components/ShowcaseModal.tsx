@@ -1,11 +1,5 @@
 import {Dialog, Transition} from '@headlessui/react';
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  ExternalLinkIcon,
-  PhotographIcon,
-  XIcon,
-} from '@heroicons/react/outline';
+import {ChevronLeftIcon, ChevronRightIcon, ExternalLinkIcon, PhotographIcon, XIcon} from '@heroicons/react/outline';
 import {FC, Fragment, memo, useCallback, useEffect, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 
@@ -85,7 +79,7 @@ const ProjectShowcaseModal: FC<ProjectShowcaseModalProps> = memo(({isOpen, onClo
                       {t(item.title)}
                     </Dialog.Title>
                     {hasGallery && (
-                      <span className="inline-flex items-center gap-1 rounded-full bg-orange-500/15 px-2.5 py-0.5 text-xs font-semibold text-orange-400 border border-orange-500/30">
+                      <span className="bg-orange-500/15 inline-flex items-center gap-1 rounded-full border border-orange-500/30 px-2.5 py-0.5 text-xs font-semibold text-orange-400">
                         <PhotographIcon className="h-3.5 w-3.5" />
                         {gallery.length} {t('screens')}
                       </span>
@@ -95,7 +89,7 @@ const ProjectShowcaseModal: FC<ProjectShowcaseModalProps> = memo(({isOpen, onClo
                     <div className="mt-2 flex flex-wrap gap-1.5">
                       {item.tags.map((tag: string) => (
                         <span
-                          className="rounded-full bg-neutral-800/90 px-2.5 py-0.5 text-xs font-medium text-neutral-300 border border-neutral-700/50"
+                          className="rounded-full border border-neutral-700/50 bg-neutral-800/90 px-2.5 py-0.5 text-xs font-medium text-neutral-300"
                           key={tag}>
                           {tag}
                         </span>
@@ -145,7 +139,7 @@ const ProjectShowcaseModal: FC<ProjectShowcaseModalProps> = memo(({isOpen, onClo
 
                     {/* Caption badge inside preview */}
                     {currentImage.title && (
-                      <div className="absolute bottom-3 inset-x-3 flex justify-between items-center rounded-xl bg-neutral-900/85 px-4 py-2 text-xs font-medium text-white backdrop-blur-md border border-neutral-700/50">
+                      <div className="bg-neutral-900/85 absolute inset-x-3 bottom-3 flex items-center justify-between rounded-xl border border-neutral-700/50 px-4 py-2 text-xs font-medium text-white backdrop-blur-md">
                         <span className="font-semibold text-neutral-100">{t(currentImage.title)}</span>
                         <span className="text-neutral-400">
                           {activeImageIndex + 1} / {gallery.length}
@@ -156,7 +150,7 @@ const ProjectShowcaseModal: FC<ProjectShowcaseModalProps> = memo(({isOpen, onClo
 
                   {/* Thumbnails strip */}
                   {gallery.length > 1 && (
-                    <div className="flex gap-2 overflow-x-auto pb-1 pt-1 scrollbar-thin scrollbar-thumb-neutral-700">
+                    <div className="scrollbar-thin scrollbar-thumb-neutral-700 flex gap-2 overflow-x-auto pb-1 pt-1">
                       {gallery.map((img: ShowcaseImage, idx: number) => {
                         const isSelected = idx === activeImageIndex;
                         return (
@@ -164,7 +158,7 @@ const ProjectShowcaseModal: FC<ProjectShowcaseModalProps> = memo(({isOpen, onClo
                             aria-label={`Go to screenshot ${idx + 1}`}
                             className={`relative h-14 w-24 shrink-0 overflow-hidden rounded-lg border-2 transition-all ${
                               isSelected
-                                ? 'border-orange-500 scale-105 shadow-md shadow-orange-500/20'
+                                ? 'scale-105 border-orange-500 shadow-md shadow-orange-500/20'
                                 : 'border-neutral-800 opacity-60 hover:opacity-100'
                             }`}
                             key={img.src}
@@ -184,10 +178,8 @@ const ProjectShowcaseModal: FC<ProjectShowcaseModalProps> = memo(({isOpen, onClo
               )}
 
               {/* Description & Details */}
-              <div className="mt-4 rounded-2xl bg-neutral-950/60 p-4 border border-neutral-800/80">
-                <p className="text-sm leading-relaxed text-neutral-300 sm:text-base">
-                  {t(item.description)}
-                </p>
+              <div className="mt-4 rounded-2xl border border-neutral-800/80 bg-neutral-950/60 p-4">
+                <p className="text-sm leading-relaxed text-neutral-300 sm:text-base">{t(item.description)}</p>
               </div>
 
               {/* Action buttons */}
@@ -195,7 +187,7 @@ const ProjectShowcaseModal: FC<ProjectShowcaseModalProps> = memo(({isOpen, onClo
                 <div className="flex flex-wrap gap-3">
                   {item.github && (
                     <a
-                      className="inline-flex items-center gap-2 rounded-xl bg-neutral-800 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-neutral-700 border border-neutral-700"
+                      className="inline-flex items-center gap-2 rounded-xl border border-neutral-700 bg-neutral-800 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-neutral-700"
                       href={item.github}
                       rel="noopener noreferrer"
                       target="_blank">

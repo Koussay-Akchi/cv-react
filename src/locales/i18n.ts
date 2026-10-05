@@ -142,17 +142,13 @@ const resources = {
       'Search skills...': 'Search skills...',
       'No skills found.': 'No skills found',
       certifications: 'Certifications',
-      certAzureContainerApps:
-        'Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps',
+      certAzureContainerApps: 'Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps',
       certDateAzureContainerApps: 'September 2026',
-      certAzureNetworking:
-        'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
+      certAzureNetworking: 'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
       certDateAzureNetworking: 'September 2026',
-      certCloudSecurity:
-        'Microsoft Applied Skills: Get started with cloud security and monitoring tasks',
+      certCloudSecurity: 'Microsoft Applied Skills: Get started with cloud security and monitoring tasks',
       certDateCloudSecurity: 'September 2026',
-      certAzureManagementTasks:
-        'Microsoft Applied Skills: Get started with Azure management tasks',
+      certAzureManagementTasks: 'Microsoft Applied Skills: Get started with Azure management tasks',
       certDateAzureManagementTasks: 'September 2026',
       certCCNA: 'CCNA: Switching, Routing, and Wireless Essentials',
       certDateCCNA: 'July 2025',
@@ -243,7 +239,7 @@ const resources = {
         "Développer et maintenir une plateforme CRM pour les laboratoires pharmaceutiques avec React, Quarkus, Docker, JWT, PostgreSQL et MongoDB, couvrant à la fois l'interface utilisateur et la logique métier backend pour les workflows de recherche, de vente et de conformité.",
       experienceContent1Highlights: [
         "Mise en œuvre d'interfaces de laboratoire pour les flux de saisie et les processus internes.",
-        "Création de services backend et de règles métier pour la gestion des produits, clients et commandes.",
+        'Création de services backend et de règles métier pour la gestion des produits, clients et commandes.',
         "Ajout de tests automatisés sur l'ensemble de la stack pour réduire les régressions et améliorer la stabilité des livraisons.",
         "Conception de points d'API REST robustes avec contrôle d'accès basé sur les rôles et vérification du cycle de vie des jetons.",
       ],
@@ -252,14 +248,14 @@ const resources = {
         "Travailler sur le CRM des laboratoires pharmaceutiques pendant mon stage avec React, Quarkus, Docker, JWT, PostgreSQL et MongoDB, en contribuant sur toute la stack tout en apprenant l'architecture et les workflows de développement d'applications web en production.",
       experienceContent2Highlights: [
         "Participation à la conception et à la mise en œuvre initiale de l'architecture applicative.",
-        "Contribution aux fonctionnalités front-end et aux services backend pour les processus métier critiques.",
+        'Contribution aux fonctionnalités front-end et aux services backend pour les processus métier critiques.',
         "Collaboration avec l'équipe pour améliorer la qualité du code, la maintenabilité et les pratiques de déploiement.",
-        "Structuration des schémas de données et stratégies de stockage entre bases relationnelles et NoSQL pour les opérations de laboratoire.",
+        'Structuration des schémas de données et stratégies de stockage entre bases relationnelles et NoSQL pour les opérations de laboratoire.',
       ],
       experienceContent3:
         "Développement d'applications web dynamiques avec React, Next.js, Node.js, Java, Docker, Terraform, Azure et AWS, tout en améliorant l'architecture système grâce à des déploiements conteneurisés et à des pratiques cloud-ready.",
       experienceContent3Highlights: [
-        "Livraison de fonctionnalités orientées client dans des équipes agiles, avec un focus sur la maintenabilité et les livraisons dans les délais.",
+        'Livraison de fonctionnalités orientées client dans des équipes agiles, avec un focus sur la maintenabilité et les livraisons dans les délais.',
         "Amélioration des workflows de déploiement via Docker et des outils d'infrastructure cloud.",
         "Amélioration des performances frontend, de la gestion d'état et de la modularité des composants pour des interfaces fluides.",
         "Intégration de vérifications CI/CD automatisées et d'environnements conteneurisés pour sécuriser les déploiements multi-services.",
@@ -267,8 +263,8 @@ const resources = {
       experienceContentSpain:
         "Conception et mise à l'échelle d'une plateforme de gestion de bornes de recharge pour véhicules électriques (CSMS) de nouvelle génération en Espagne, prenant en charge les protocoles OCPP 1.6-J et OCPP 2.0.1 / 2.1, avec profils de recharge intelligente, gestion dynamique de puissance, tarification avancée et flux télémétriques haute performance.",
       experienceContentSpainHighlights: [
-        "Développement de moteurs de communication bidirectionnels bi-protocoles OCPP (1.6-J et 2.1) via WebSockets, gestion des profils de recharge intelligente (ISO 15118) et traitement sécurisé du cycle de vie des sessions.",
-        "Mise en place de pipelines de traitement télémétrique temps réel haute cadence pour les relevés de compteurs instantanés avec Redis Pub/Sub, Socket.IO, PostgreSQL et métriques Grafana.",
+        'Développement de moteurs de communication bidirectionnels bi-protocoles OCPP (1.6-J et 2.1) via WebSockets, gestion des profils de recharge intelligente (ISO 15118) et traitement sécurisé du cycle de vie des sessions.',
+        'Mise en place de pipelines de traitement télémétrique temps réel haute cadence pour les relevés de compteurs instantanés avec Redis Pub/Sub, Socket.IO, PostgreSQL et métriques Grafana.',
         "Implémentation d'algorithmes de délestage et de répartition dynamique de charge (DLM), calcul automatisé de grilles tarifaires et télégestion du matériel (diagnostics et firmwares).",
         "Architecture d'infrastructures multi-tenant résilientes orchestrant des microservices Java et Python sous Kubernetes et Docker, garantissant une isolation stricte des données et des opérations par client.",
       ],
@@ -277,15 +273,15 @@ const resources = {
       experienceContentOpkodeLabsHighlights: [
         "Mise en place d'un système de supervision en temps réel avec Laravel, PostgreSQL, Redis Pub/Sub, Socket.IO et Grafana.",
         "Implémentation de contrôles d'administration à distance pour les sessions de charge et les mises à jour de tarification.",
-        "Conception de workflows multi-tenant sécurisés pour isoler les données et les opérations entre clients.",
+        'Conception de workflows multi-tenant sécurisés pour isoler les données et les opérations entre clients.',
         "Livraison d'une infrastructure de production fiable avec Python, Docker et orchestration de services.",
       ],
       experienceContentNextStep:
         "Conception et déploiement d'une passerelle API & IA sur Apache APISIX et Kubernetes avec Kafka, Redis, Node.js, React, PostgreSQL et outils d'observabilité, centralisant la gestion des API, le load balancing et l'orchestration IA dans un environnement cloud-native.",
       experienceContentNextStepHighlights: [
         "Mise en place de l'orchestration IA multi-modèles (ai-proxy-multi), templating/décoration de prompts, réécriture de requêtes et masquage PII / anonymisation de données.",
-        "Configuration de la gestion de trafic : rate/connection limiting distribué, traffic splitting, coupe-circuit (api-breaker), restrictions IP/consommateurs et duplication de requêtes (proxy-mirror).",
-        "Implémentation des transformations de payload, transcodage gRPC, réécriture de réponses et validation de requêtes via plugins Lua et fonctions serverless.",
+        'Configuration de la gestion de trafic : rate/connection limiting distribué, traffic splitting, coupe-circuit (api-breaker), restrictions IP/consommateurs et duplication de requêtes (proxy-mirror).',
+        'Implémentation des transformations de payload, transcodage gRPC, réécriture de réponses et validation de requêtes via plugins Lua et fonctions serverless.',
         "Centralisation de l'observabilité et streaming d'audit avec OpenTelemetry, métriques Prometheus, Kafka et pipelines de logging Elasticsearch.",
         "Livraison d'un portail self-service React et Node.js avec RBAC et tableaux de bord de surveillance.",
         "Validation de la résilience grâce au chaos engineering et à l'automatisation des pipelines CI/CD dans des environnements cloud-native.",
@@ -293,8 +289,8 @@ const resources = {
       experienceContentAlliance:
         "Développement d'un microservice et d'une API pour la gestion des bons d'achat électroniques destinés aux clients de la SNDP avec C#, ASP.NET, Java et PostgreSQL.",
       experienceContentAllianceHighlights: [
-        "Mise en place de la logique backend pour la gestion du cycle de vie et la validation des bons.",
-        "Intégration des services applicatifs avec une gestion sécurisée des données et des règles métier.",
+        'Mise en place de la logique backend pour la gestion du cycle de vie et la validation des bons.',
+        'Intégration des services applicatifs avec une gestion sécurisée des données et des règles métier.',
         "Collaboration sur la conception des API et l'intégration des services pour soutenir les workflows clients.",
         "Automatisation des migrations de base de données et des requêtes transactionnelles garantissant l'intégrité stricte des opérations.",
       ],
@@ -345,17 +341,13 @@ const resources = {
       'Search skills...': 'Recherche...',
       'No skills found.': 'Aucune compétence trouvée',
       certifications: 'Certifications',
-      certAzureContainerApps:
-        'Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps',
+      certAzureContainerApps: 'Microsoft Applied Skills: Deploy cloud-native apps using Azure Container Apps',
       certDateAzureContainerApps: 'Septembre 2026',
-      certAzureNetworking:
-        'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
+      certAzureNetworking: 'Microsoft Applied Skills: Configure secure access to your workloads using Azure networking',
       certDateAzureNetworking: 'Septembre 2026',
-      certCloudSecurity:
-        'Microsoft Applied Skills: Get started with cloud security and monitoring tasks',
+      certCloudSecurity: 'Microsoft Applied Skills: Get started with cloud security and monitoring tasks',
       certDateCloudSecurity: 'Septembre 2026',
-      certAzureManagementTasks:
-        'Microsoft Applied Skills: Get started with Azure management tasks',
+      certAzureManagementTasks: 'Microsoft Applied Skills: Get started with Azure management tasks',
       certDateAzureManagementTasks: 'Septembre 2026',
       certCCNA: 'CCNA: Switching, Routing, and Wireless Essentials',
       certDateCCNA: 'Juillet 2025',

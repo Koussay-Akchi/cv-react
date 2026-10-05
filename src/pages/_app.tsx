@@ -28,6 +28,20 @@ const MyApp = memo(({Component, pageProps}: AppProps): React.JSX.Element => {
             capture_pageleave: true,
             capture_exceptions: true,
             defaults: '2026-01-30',
+            before_send: event => {
+              if (event?.event === '$exception') {
+                const exceptionValues = (event.properties?.$exception_list as Array<{value?: string}> | undefined)
+                  ?.map(e => e.value || '')
+                  .join(' ');
+                const exceptionMessage = String(event.properties?.$exception_message || '');
+                const rawString = `${exceptionValues} ${exceptionMessage}`;
+
+                if (rawString.includes('Object Not Found Matching Id') && rawString.includes('MethodName:update')) {
+                  return null;
+                }
+              }
+              return event;
+            },
           });
 
           posthog.capture('$pageview');

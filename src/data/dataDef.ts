@@ -140,4 +140,3 @@ export interface Certification {
   url: string;
   logo: string | StaticImageData;
 }
-

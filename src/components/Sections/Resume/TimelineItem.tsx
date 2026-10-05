@@ -8,9 +8,9 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   const {t} = useTranslation();
 
   const bulletList = highlights
-    ? (Array.isArray(t(highlights, {returnObjects: true}))
-        ? (t(highlights, {returnObjects: true}) as string[])
-        : [t(highlights)])
+    ? Array.isArray(t(highlights, {returnObjects: true}))
+      ? (t(highlights, {returnObjects: true}) as string[])
+      : [t(highlights)]
     : [];
 
   return (

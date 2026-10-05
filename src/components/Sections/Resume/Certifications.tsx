@@ -25,8 +25,7 @@ const CertificationCard: FC<{cert: Certification}> = memo(({cert}) => {
       className="group flex cursor-pointer flex-col gap-3 rounded-lg border border-neutral-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-orange-400 hover:shadow-md"
       href={url}
       rel="noopener noreferrer"
-      target="_blank"
-    >
+      target="_blank">
       <div className="flex items-center gap-4">
         <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-md border border-neutral-100 bg-neutral-50 p-1.5">
           <Image alt={issuer} className="h-full w-full object-contain" src={logo} />
